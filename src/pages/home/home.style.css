@@ -1,11 +1,26 @@
-.homeLogo {
-    height: 80vh;
+.homeHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeHeader__logo {
+    height: 60vh;
+    margin: 5vh 0;
     width: 100%;
     object-fit: contain;
 }
 
-.homeTitle {
-    margin-top: 10vh;
-    font-size: 1.5em;
+.homeHeader__title {
+    font-size: 6vw;
+    text-align: center;
     font-weight: 600;
+}
+
+.homeHeader__button {
+    margin-top: 5vh;
+}
+
+.homeFresh {
+    
 }

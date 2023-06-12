@@ -1,16 +1,25 @@
 :root {
     --primary-color: #000;
-    --accent-color: #fff;
+    --accent-color: #c51b19;
 }
 
 a,
 a:hover,
 a:active,
 a:visited {
-    color: black;
     text-decoration: none;
 }
 
 h1, h2 {
     font-family: 'Lemon';
+}
+
+.button {
+    font-size: 32px;
+    padding: 18px 36px;
+    border-radius: 32px;
+    font-weight: 600;
+    font-family: 'Lemon';
+    background-color: var(--accent-color);
+    color: white;
 }
