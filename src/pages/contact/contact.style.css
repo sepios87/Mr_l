@@ -1,3 +1,5 @@
+
+/* -------------------- HEADER -------------------- */
 .contact{
     display: flex;
     flex-direction: column;
@@ -25,7 +27,7 @@
 	text-align: center;
 }
 
-.contact__adress{
+.contact .contact__adress{
     font-family: Lemon;
     line-height: 1;
     font-size: 1.4rem;
@@ -35,7 +37,7 @@
     color: var(--primary-color);
 }
 
-.contact__adress:active{
+.contact .contact__adress a:active, .contact .contact__adress a:hover{
     color: var(--accent-color);
 }
 
@@ -43,4 +45,108 @@
     .contact__title, .contact__sub-title{
         font-size: 3rem;
     }  
+}
+
+/* -------------------- MAIN  -------------------- */
+.contactMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .contactMain{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5px;
+    }  
+}
+
+/* SCHEDUL */
+.contactMain__item, .contactMain__title{
+    font-family: Lemon;
+	margin: 10px 0;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.contactMain__schedule{
+    width: 90vw;
+    max-width: 400px;
+    border : 2px solid black; 
+}
+
+.contactMain__title{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.contactMain__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    margin: 0;
+    padding: 0 10px;
+}
+
+.contactMain__info{
+    width: 90vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.4rem;
+    max-width: 380px;
+    padding: 10px;
+
+}
+
+.contactMain__info--accent{
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: 400px) {
+    .contactMain__item{
+        flex-direction: row;
+        align-items: center;
+    }  
+}
+
+@media screen and (min-width: 600px) {
+    .contactMain__info{
+        max-width: 500px;
+    }
+}
+
+
+/* NETWORK */
+
+.contactMain--network{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 400px;
+}
+
+.contactMain-network .contactMain-network__item{
+    font-family: Lemon;
+    line-height: 1;
+	font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .contactMain-network .contactMain-network__item{
+        text-align: left;
+    }
+}
+.contactMain-network .contactMain-network__item a:hover{
+    color: var(--accent-color);
 }
