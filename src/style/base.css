@@ -1,4 +1,11 @@
-a, a:hover, a:active, a:visited {
+a,
+a:hover,
+a:active,
+a:visited {
     color: #000;
     text-decoration: none;
+}
+
+h1, h2 {
+    font-family: Lemon;
 }

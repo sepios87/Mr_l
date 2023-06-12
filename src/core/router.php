@@ -1,13 +1,8 @@
 <?php
+$origin = str_replace(dirname($_SERVER['PHP_SELF']), '', $_SERVER['REQUEST_URI']);
 
-if (isset($_GET['page'])) {
-    $page = $_GET['page'];
-} else {
-    $page = 'home';
-}
-
-switch ($page) {
-    case 'home':
+switch ($origin) {
+    case '/':
         displayPage('home');
         break;
     default:
