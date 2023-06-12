@@ -10,6 +10,9 @@ switch ($page) {
     case 'home':
         displayPage('home');
         break;
+    case 'contact':
+        displayPage('contact');
+        break;
     default:
         displayPage('404');
         break;

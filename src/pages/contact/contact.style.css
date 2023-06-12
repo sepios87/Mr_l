@@ -1,0 +1,13 @@
+.contact__title{
+	font-family: Lemon;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 3rem;
+}
+
+.contact__sub-title{
+    width: 100%;
+    text-align: center;
+    font-family: Lemon;
+    text-transform: uppercase;
+}
