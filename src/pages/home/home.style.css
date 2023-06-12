@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 38px;
 }
 
 .homeHeader__logo {
@@ -11,16 +12,27 @@
     object-fit: contain;
 }
 
-.homeHeader__title {
-    font-size: 6vw;
-    text-align: center;
-    font-weight: 600;
+.homeHeader__button {
+    margin-top: 3vh;
 }
 
-.homeHeader__button {
+.homeSupplier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 38px;
+}
+
+.homeSupplier__title {
+    text-decoration: underline;
     margin-top: 5vh;
 }
 
-.homeFresh {
-    
+.homeSupplier__explain {
+    margin-top: 3vh;
+}
+
+.homeSupplierItem__title {
+    font-family: Antro;
+    font-size: 20px;
 }
