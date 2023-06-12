@@ -1,0 +1,30 @@
+/* Antro */
+@font-face {
+    font-family: Antro;
+    src: url('assets/fonts/Antro.otf');
+}
+
+/* Lemon Milk */
+@font-face {
+    font-family: Lemon;
+    font-weight: 300;
+    src: url('assets/fonts/LEMONMILK-Regular.otf');
+}
+
+@font-face {
+    font-family: Lemon;
+    font-weight: 600;
+    src: url('assets/fonts/LEMONMILK-Bold.otf');
+}
+
+@font-face {
+    font-family: Lemon;
+    font-weight: 400;
+    src: url('assets/fonts/LEMONMILK-Medium.otf');
+}
+
+@font-face {
+    font-family: Lemon;
+    font-weight: 100;
+    src: url('assets/fonts/LEMONMILK-Light.otf');
+}
