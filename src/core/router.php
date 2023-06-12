@@ -8,8 +8,15 @@ if (isset($_GET['page'])) {
 
 switch ($page) {
     case 'home':
-        $style = 'home'; 
-        require_once 'src/shared/header.php';
-        require_once 'src/pages/home/home.php';
+        displayPage('home');
         break;
+    default:
+        displayPage('404');
+        break;
+}
+
+function displayPage($pageName)
+{
+    require_once 'src/shared/header.php';
+    require_once 'src/pages/' . $pageName . '/' . $pageName . '.php';
 }
