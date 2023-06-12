@@ -1,13 +1,46 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
 .contact__title{
 	font-family: Lemon;
+    text-transform: uppercase;
 	text-align: center;
 	text-decoration: underline;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .contact__sub-title{
+	font-family: Antro;
     width: 100%;
-    text-align: center;
+	font-size: 2rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	margin: 50px 0;
+	text-align: center;
+}
+
+.contact__adress{
     font-family: Lemon;
+    line-height: 1;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    text-align: center;
     text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.contact__adress:active{
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+    .contact__title, .contact__sub-title{
+        font-size: 3rem;
+    }  
 }

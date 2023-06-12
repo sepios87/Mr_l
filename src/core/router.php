@@ -5,7 +5,7 @@ switch ($origin) {
     case '/':
         displayPage('home');
         break;
-    case 'contact':
+    case '/contact':
         displayPage('contact');
         break;
     default:
