@@ -15,6 +15,7 @@
 	text-align: center;
 	text-decoration: underline;
 	font-size: 2rem;
+    font-weight: 500;
 }
 
 .contact__sub-title{
@@ -48,42 +49,42 @@
 }
 
 /* -------------------- MAIN  -------------------- */
-.contactMain{
+.contact-main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: calc(100% - 10px);
+    padding: 5px;
 }
 
 @media screen and (min-width: 768px) {
-    .contactMain{
+    .contact-main{
         flex-direction: row;
         justify-content: space-around;
-        padding: 5px;
     }  
 }
 
 /* SCHEDUL */
-.contactMain__item, .contactMain__title{
+.contact-main__item, .contact-main__title{
     font-family: Lemon;
 	margin: 10px 0;
 	font-size: 1.2rem;
 	font-weight: 300;
 }
 
-.contactMain__schedule{
+.contact-main__schedule{
     width: 90vw;
     max-width: 400px;
     border : 2px solid black; 
 }
 
-.contactMain__title{
+.contact-main__title{
     text-transform: uppercase;
     font-weight: 400;
 }
 
-.contactMain__item{
+.contact-main__item{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,7 +93,7 @@
     padding: 0 10px;
 }
 
-.contactMain__info{
+.contact-main__info{
     width: 90vw;
     text-transform: uppercase;
     font-weight: 400;
@@ -102,19 +103,19 @@
 
 }
 
-.contactMain__info--accent{
+.contact-main__info--accent{
     color: var(--accent-color);
 }
 
 @media screen and (min-width: 400px) {
-    .contactMain__item{
+    .contact-main__item{
         flex-direction: row;
         align-items: center;
     }  
 }
 
 @media screen and (min-width: 600px) {
-    .contactMain__info{
+    .contact-main__info{
         max-width: 500px;
     }
 }
@@ -122,7 +123,7 @@
 
 /* NETWORK */
 
-.contactMain--network{
+.contact-main--network{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,7 +132,7 @@
     max-width: 400px;
 }
 
-.contactMain-network .contactMain-network__item{
+.contact-main-network .contact-main-network__item{
     font-family: Lemon;
     line-height: 1;
 	font-size: 2rem;
@@ -142,11 +143,35 @@
     color: var(--primary-color);
 }
 
+.contact-main-network .contact-main-network__item a:hover{
+    color: var(--accent-color);
+}
+
+.contact-main-network__contain-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contact-main-network__logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 768px) {
-    .contactMain-network .contactMain-network__item{
+    .contact-main-network .contact-main-network__item{
         text-align: left;
     }
-}
-.contactMain-network .contactMain-network__item a:hover{
-    color: var(--accent-color);
+    .contact-main-network__contain-logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        margin: 10px 0;
+    }
 }
