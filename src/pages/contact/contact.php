@@ -38,8 +38,8 @@
         <li class="contact-main-network__item" > <a href="mailto:jolimonsieur.l@gmail.com">mail</a> </li>
         <li class="contact-main-network__item" > <a href="tel:+33647378377">06 47 37 83 77</a> </li>
         <li class="contact-main-network__contain-logo"> 
-            <a href="#"><img class="contact-main-network__logo" src="assets/icons/uber_eats.png"></a>
-            <a href="#"><img class="contact-main-network__logo" src="assets/icons/deliveroo.png"></a>
+            <a href="#"><img class="contact-main-network__logo" src="assets/img/icons/uber_eats.png"></a>
+            <a href="#"><img class="contact-main-network__logo" src="assets/img/icons/deliveroo.png"></a>
         </li>
     </ul>
 </main>

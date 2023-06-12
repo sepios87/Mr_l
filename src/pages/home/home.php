@@ -1,5 +1,5 @@
 <header class="home-header">
-    <img class="home-header__logo" src="assets/logo.png">
+    <img class="home-header__logo" src="assets/img/logo.png" alt="Logo du restaurant" />
     <h1 class="home-header__title">le hot dog à la saucisse de toulouse</h1>
     <a class="button home-header__button" href="#restaurant-menu">Découvre nos recettes</a>
 </header>
@@ -11,7 +11,7 @@
         <li>
             <figure class="home-supplierItem">
                 <p class="home-supplierItem__title">La boulange d'Angéline</p>
-                <img class="home-supplierItem__img" src="assets/suppliers/pain_boulange _angeline.jpg">
+                <img class="home-supplierItem__img" src="assets/img/suppliers/pain_boulangerie_angeline.jpg" alt="Pain de la boulangerie d'Angéline" />
                 <figcaption class="home-supplierItem__figcaption">
                     Pain ultra moelleux, méga bon. <br />
                     Coeur sur Guillaume et Antoine. <br />
@@ -22,7 +22,7 @@
         <li>
             <figure class="home-supplierItem">
                 <p class="home-supplierItem__title">Agriculture locale</p>
-                <img class="home-supplierItem__img" src="assets/suppliers/herbe_aromatique_locale.jpg">
+                <img class="home-supplierItem__img" src="assets/img/suppliers/herbe_aromatique_locale.jpg" alt="Herbes aromatiques locales" />
                 <figcaption class="home-supplierItem__figcaption">
                     Nos herbes fraiches et légumes proviennent de l'agriculture locale
                 </figcaption>
@@ -31,18 +31,18 @@
         <li>
             <figure class="home-supplierItem">
                 <p class="home-supplierItem__title">ketchup Sanchon</p>
-                <img class="home-supplierItem__img" src="assets/suppliers/ketchup_sanchon.jpg">
+                <img class="home-supplierItem__img" src="assets/img/suppliers/ketchup_sanchon.jpg" alt="Ketchup Sanchon" />
                 <figcaption class="home-supplierItem__figcaption">
-                    Des sauces locales et savoureuses tout droit venues de chez <a class="home-supplierItem__link" href="https://www.marcelsenchou.fr/">les ariègeois</a>.
+                    Des sauces locales et savoureuses tout droit venues de chez <a class="home-supplierItem__link" href="https://www.marcelsenchou.fr/" target="_blank">les ariègeois</a>.
                 </figcaption>
             </figure>
         </li>
         <li>
             <figure class="home-supplierItem">
                 <p class="home-supplierItem__title">Boucherie Côtelette</p>
-                <img class="home-supplierItem__img" src="assets/suppliers/stephane_boucherie_cotelette.jpg">
+                <img class="home-supplierItem__img" src="assets/img/suppliers/stephane_boucherie_cotelette.jpg" alt="Stéphane de la boucherie Côtelette" />
                 <figcaption class="home-supplierItem__figcaption">
-                    C'est chez Stéphane à la <a class="home-supplierItem__link" href="https://www.instagram.com/boucherie.cotelette/">boucherie cotelette</a> qu'on chope notre super saucisse de Toulouse. BIG diamêtre pour un BIG kiff. <br />
+                    C'est chez Stéphane à la <a class="home-supplierItem__link" href="https://www.instagram.com/boucherie.cotelette/" target="_blank">boucherie cotelette</a> qu'on chope notre super saucisse de Toulouse. BIG diamêtre pour un BIG kiff. <br />
                     22 av. de l'URSS, 31400 Toulouse <br />
                 </figcaption>
             </figure>
@@ -123,9 +123,23 @@
         </li>
     </ul>
     <p class="home-restaurant-menu__note">
-        <span>*Petites notes :</span><br/>
+        <span>*Petites notes :</span><br />
         - Nos Pains sont artisanaux et locaux<br />
         - Notre saucisse de toulouse vient de chez cotelette (2km)<br />
         - Nos ketchups viennent d'ariège
     </p>
+</section>
+
+<section class="home-gallery">
+    <ul class="home-gallery__list">
+        <li class="home-gallery__item">
+            <img class="home-gallery__img" src="assets/img/gallery/manso_1.jpg" />
+        </li>
+        <li class="home-gallery__item">
+            <img class="home-gallery__img" src="assets/img/gallery/manso_2.jpg" />
+        </li>
+        <li class="home-gallery__item">
+            <img class="home-gallery__img" src="assets/img/gallery/manso_3.jpg" />
+        </li>
+    </ul>
 </section>

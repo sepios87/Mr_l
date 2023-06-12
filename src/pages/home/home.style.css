@@ -13,8 +13,9 @@
     object-fit: contain;
 }
 
-.home-header__button {
+.home-header .home-header__button {
     margin-top: 3vh;
+    color: white;
 }
 
 .home-supplier {
@@ -127,4 +128,22 @@
 .home-restaurant-menu__note span {
     font-weight: 400;
     line-height: 2.0;
+}
+
+.home-gallery {
+    margin: 5vh 0;
+}
+
+.home-gallery__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.home-gallery__img {
+    height: auto;
+    max-height: 230px;
+    min-height: 180px;
+    width: 100%;
+    object-fit: cover;
 }
