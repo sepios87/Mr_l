@@ -22,21 +22,6 @@ h1, h2, h3 {
     text-align: center;
 }
 
-h1 {
-    font-size: min(6vw, 28px);
-    font-weight: 600;
-}
-
-h2 {
-    font-size: min(6vw, 28px);
-    font-weight: 500;
-}
-
-h3 {
-    font-size: min(3.5vw, 16px);
-    font-weight: 400;
-}
-
 .button, .button:active, .button:hover {
     font-size: 12px;
     padding: 12px 26px;

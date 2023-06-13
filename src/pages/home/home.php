@@ -6,43 +6,45 @@
 
 <section class="home-supplier">
     <h2 class="home-supplier__title">Des produits <br /> frais et locaux</h2>
-    <h3 class="home-supplier__explain">On prend à coeur de travailler avec un maximum de produits frais et locaux</h3>
     <ul class="home-supplier__list">
-        <li>
-            <figure class="home-supplierItem">
-                <p class="home-supplierItem__title">La boulange d'Angéline</p>
-                <img class="home-supplierItem__img" src="assets/img/suppliers/pain_boulangerie_angeline.jpg" alt="Pain de la boulangerie d'Angéline" />
-                <figcaption class="home-supplierItem__figcaption">
+        <li class="home-supplier-item--explain">
+            <h3 class="home-supplier__explain">On prend à coeur de travailler avec un maximum de produits frais et locaux</h3>
+        </li>
+        <li class="home-supplier-item">
+            <figure>
+                <p class="home-supplier-item__title">La boulange d'Angéline</p>
+                <img class="home-supplier-item__img" src="assets/img/suppliers/pain_boulangerie_angeline.jpg" alt="Pain de la boulangerie d'Angéline" />
+                <figcaption class="home-supplier-item__figcaption">
                     Pain ultra moelleux, méga bon. <br />
                     Coeur sur Guillaume et Antoine. <br />
                     37 av. de l'URSS, 31400 Toulouse
                 </figcaption>
             </figure>
         </li>
-        <li>
-            <figure class="home-supplierItem">
-                <p class="home-supplierItem__title">Agriculture locale</p>
-                <img class="home-supplierItem__img" src="assets/img/suppliers/herbe_aromatique_locale.jpg" alt="Herbes aromatiques locales" />
-                <figcaption class="home-supplierItem__figcaption">
+        <li class="home-supplier-item">
+            <figure>
+                <p class="home-supplier-item__title">Agriculture locale</p>
+                <img class="home-supplier-item__img" src="assets/img/suppliers/herbe_aromatique_locale.jpg" alt="Herbes aromatiques locales" />
+                <figcaption class="home-supplier-item__figcaption">
                     Nos herbes fraiches et légumes proviennent de l'agriculture locale
                 </figcaption>
             </figure>
         </li>
-        <li>
-            <figure class="home-supplierItem">
-                <p class="home-supplierItem__title">ketchup Sanchon</p>
-                <img class="home-supplierItem__img" src="assets/img/suppliers/ketchup_sanchon.jpg" alt="Ketchup Sanchon" />
-                <figcaption class="home-supplierItem__figcaption">
-                    Des sauces locales et savoureuses tout droit venues de chez <a class="home-supplierItem__link" href="https://www.marcelsenchou.fr/" target="_blank">les ariègeois</a>.
+        <li class="home-supplier-item">
+            <figure>
+                <p class="home-supplier-item__title">ketchup Sanchon</p>
+                <img class="home-supplier-item__img" src="assets/img/suppliers/ketchup_sanchon.jpg" alt="Ketchup Sanchon" />
+                <figcaption class="home-supplier-item__figcaption">
+                    Des sauces locales et savoureuses tout droit venues de chez <a class="home-supplier-item__link" href="https://www.marcelsenchou.fr/" target="_blank">les ariègeois</a>.
                 </figcaption>
             </figure>
         </li>
         <li>
-            <figure class="home-supplierItem">
-                <p class="home-supplierItem__title">Boucherie Côtelette</p>
-                <img class="home-supplierItem__img" src="assets/img/suppliers/stephane_boucherie_cotelette.jpg" alt="Stéphane de la boucherie Côtelette" />
-                <figcaption class="home-supplierItem__figcaption">
-                    C'est chez Stéphane à la <a class="home-supplierItem__link" href="https://www.instagram.com/boucherie.cotelette/" target="_blank">boucherie cotelette</a> qu'on chope notre super saucisse de Toulouse. BIG diamêtre pour un BIG kiff. <br />
+            <figure class="home-supplier-item">
+                <p class="home-supplier-item__title">Boucherie Côtelette</p>
+                <img class="home-supplier-item__img" src="assets/img/suppliers/stephane_boucherie_cotelette.jpg" alt="Stéphane de la boucherie Côtelette" />
+                <figcaption class="home-supplier-item__figcaption">
+                    C'est chez Stéphane à la <a class="home-supplier-item__link" href="https://www.instagram.com/boucherie.cotelette/" target="_blank">boucherie cotelette</a> qu'on chope notre super saucisse de Toulouse. BIG diamêtre pour un BIG kiff. <br />
                     22 av. de l'URSS, 31400 Toulouse <br />
                 </figcaption>
             </figure>

@@ -1,3 +1,19 @@
+h1 {
+    font-size: min(6vw, 28px);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: min(6vw, 28px);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: min(3.5vw, 16px);
+    font-weight: 400;
+}
+
+/*Header*/
 .home-header {
     display: flex;
     flex-direction: column;
@@ -8,6 +24,7 @@
 .home-header__logo {
     height: 60vh;
     max-height: 280px;
+    min-height: 200px;
     margin: 5vh 0;
     width: 100%;
     object-fit: contain;
@@ -17,6 +34,15 @@
     margin-top: 3vh;
 }
 
+@media screen and (min-width: 768px) {
+    .home-header__logo {
+        height: 80vh;
+        max-height: 520px;
+        min-height: 400px;
+    }
+}
+
+/*Supplier*/
 .home-supplier {
     display: flex;
     flex-direction: column;
@@ -37,18 +63,20 @@
 
 .home-supplier__list {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.home-supplierItem {
+.home-supplier-item {
     margin-top: 4vh;
 }
 
-.home-supplierItem__title {
+.home-supplier-item__title {
     font-family: Antro;
     font-size: 24px;
 }
 
-.home-supplierItem__img {
+.home-supplier-item__img {
     margin-top: 12px;
     height: 30vh;
     max-height: 280px;
@@ -58,7 +86,7 @@
     border-radius: 2px;
 }
 
-.home-supplierItem__figcaption {
+.home-supplier-item__figcaption {
     font-size: 12px;
     font-family: Lemon;
     font-weight: 300;
@@ -66,11 +94,40 @@
     line-height: 1.2;
 }
 
-.home-supplierItem__link {
+.home-supplier-item__link {
     color: var(--accent-color);
     text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) {
+    .home-supplier br {
+        display: none;
+    }
+
+    .home-supplier {
+        margin-top: 6vh;
+    }
+
+    .home-supplier__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 56px;
+    }
+
+    .home-supplier-item--explain {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        display: block;
+        margin: auto;
+    }
+
+    .home-supplier-item__title {
+        font-size: 32px;
+    }
+}
+
+/*Restaurant menu*/
 .home-restaurant-menu {
     margin: 5vh 38px 0;
 }
@@ -129,6 +186,7 @@
     line-height: 2;
 }
 
+/*Gallery*/
 .home-gallery {
     margin: 5vh 0;
 }
@@ -147,6 +205,7 @@
     object-fit: cover;
 }
 
+/*Lifestyle*/
 .home-lifestyle {
     display: flex;
     flex-direction: column;
@@ -177,6 +236,7 @@
     line-height: 1.5;
 }
 
+/*Tee shirt and Plate*/
 .home-tee-shirt,
 .home-plate {
     margin: 5vh 38px 0;
