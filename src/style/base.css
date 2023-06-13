@@ -1,6 +1,11 @@
 :root {
-    --primary-color: #000;
+    --primary-color: black;
     --accent-color: #c51b19;
+    --success-color: #42b74c;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a,
@@ -11,18 +16,25 @@ a:visited {
     color: #000;
 }
 
-h1, h2 {
+h1, h2, h3 {
+    line-height: 1.5;
     font-family: 'Lemon';
-    font-size: min(6vw, 32px);
-    font-weight: 600;
     text-align: center;
 }
 
+h1 {
+    font-size: min(6vw, 28px);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: min(6vw, 28px);
+    font-weight: 500;
+}
+
 h3 {
-    font-family: 'Lemon';
-    font-size: min(4vw, 24px);
+    font-size: min(3.5vw, 16px);
     font-weight: 400;
-    text-align: center;
 }
 
 .button {

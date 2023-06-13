@@ -1,38 +1,149 @@
-.homeHeader {
+.home-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 38px;
 }
 
-.homeHeader__logo {
+.home-header__logo {
     height: 60vh;
+    max-height: 280px;
     margin: 5vh 0;
     width: 100%;
     object-fit: contain;
 }
 
-.homeHeader__button {
+.home-header .home-header__button {
     margin-top: 3vh;
+    color: white;
 }
 
-.homeSupplier {
+.home-supplier {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 38px;
 }
 
-.homeSupplier__title {
+.home-supplier__title,
+.home-restaurant-menu__title {
     text-decoration: underline;
     margin-top: 5vh;
 }
 
-.homeSupplier__explain {
-    margin-top: 3vh;
+.home-supplier__explain,
+.home-restaurant-menu__explain {
+    margin-top: 2vh;
 }
 
-.homeSupplierItem__title {
+.home-supplier__list {
+    width: 100%;
+}
+
+.home-supplierItem {
+    margin-top: 4vh;
+}
+
+.home-supplierItem__title {
     font-family: Antro;
-    font-size: 20px;
+    font-size: 24px;
+}
+
+.home-supplierItem__img {
+    margin-top: 12px;
+    height: 30vh;
+    max-height: 280px;
+    min-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.home-supplierItem__figcaption {
+    font-size: 12px;
+    font-family: Lemon;
+    font-weight: 300;
+    margin-top: 8px;
+    line-height: 1.2;
+}
+
+.home-supplierItem__link {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.home-restaurant-menu {
+    margin: 5vh 38px 0;
+}
+
+.home-restaurant-menu__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 4vh;
+}
+
+.home-menu-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 12px;
+    font-family: Lemon;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.home-menu-item--vegetarian::before {
+    left: -18px;
+    top: 8px;
+    position: absolute;
+    content: '';
+    background-color: var(--success-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.home-menu-item__recipe {
+    width: 100%;
+}
+
+.home-menu-item__ingredients {
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 6px;
+    display: flex;
+    column-gap: 12px;
+    flex-wrap: wrap;
+}
+
+.home-restaurant-menu__note {
+    font-family: Lemon;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 4vh;
+    line-height: 1.2;
+}
+
+.home-restaurant-menu__note span {
+    font-weight: 400;
+    line-height: 2.0;
+}
+
+.home-gallery {
+    margin: 5vh 0;
+}
+
+.home-gallery__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.home-gallery__img {
+    height: auto;
+    max-height: 230px;
+    min-height: 180px;
+    width: 100%;
+    object-fit: cover;
 }
