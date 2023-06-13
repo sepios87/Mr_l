@@ -1,7 +1,7 @@
 <header class="home-header">
     <img class="home-header__logo" src="assets/img/logo.png" alt="Logo du restaurant">
     <h1 class="home-header__title">le hot dog à la saucisse de toulouse</h1>
-    <a class="button home-header__button" href="#restaurant-menu">Découvre nos recettes</a>
+    <a class="button home-header__button" href="#restaurant-menu" >Découvre nos recettes</a>
 </header>
 
 <section class="home-supplier">
