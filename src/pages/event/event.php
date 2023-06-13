@@ -55,14 +55,14 @@
             
         <h3 class="event-specific__title--envie">Notre envie </h3>
         <p class="event-specific__text">Sucitez la surprise en mangeant un hot-dog sexy, local et gourmand. Épatez vos convives/clients de la mise en scène à l'assiette.</p>
-        <img class="event-specific__img-banniere" src="assets/img/gallery/manso_3.jpg" alt="Logo du restaurant">
+        <img class="event-specific__img-banniere" src="assets/img/gallery/baby_hot_dogs.jpg" alt="Lots de trois petits hot-dogs">
     
     </section>
 </main>
 
 <p class="event__text">Alors, prêt à embarquer pour un voyage culinaire délirant avec Monsieur L ? Réservez notre saucissclette dès maintenant pour apporter une touche de fun et de gourmandise à votre événement !</p>
 
-<img class="event__img-banniere" src="assets/img/event/hot_baby_dog_bannier.png" alt="Logo du restaurant" >
+<img class="event__img-banniere" src="assets/img/event/hot_baby_dog_bannier.png" alt="Photo du hot baby dog.">
 
 <section class="event-info">
     <h6 class="event-info__title">Vous recherchez une expérience culinaire unique et délicieusement décalée pour votre prochain événement à Toulouse ?</h6>
@@ -71,7 +71,7 @@
         <p class="event-info__text">Notre saucissclette est prête à faire sensation lors de votre événement ! Que vous organisiez une fête d'entreprise, une rencontre sportive, une foire, un festival ou toute autre occasion spéciale, notre équipe dynamique et passionnée vous garantit une expérience culinaire mémorable qui ravira les papilles de tous vos convives.</p>
         <p class="event-info__text">Lorsque vous réservez notre saucissclette,  vous bénéficiez non seulement de délices culinaires uniques, mais aussi d'une équipe chaleureuse et attentionnée. Nous sommes passionnés par ce que nous faisons, et notre objectif est de rendre votre événement mémorable et amusant. Nous mettons tout en œuvre pour créer une atmosphère conviviale, où les rires, les sourires et les délices se mélangent pour une expérience inoubliable.</p>
     </div>
-    <img class="event-info__image" src="assets/img/gallery/manso_2.jpg" alt="Logo du restaurant">
+    <img class="event-info__image" src="assets/img/gallery/hot_dog_toutouyoutou.jpg" alt="Photo du hot dog toutouyoutou">
 
     
 </section>
