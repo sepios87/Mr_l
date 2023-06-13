@@ -242,6 +242,10 @@ h3 {
     position: relative;
 }
 
+.home-restaurant-menu__button a:hover {
+    color: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
     .home-restaurant-menu__container {
         margin-top: 2vh;
