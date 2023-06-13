@@ -5,7 +5,7 @@
 
 <head>
     <title><?= $title ?></title>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="theme-color" content="#ffffff">
@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="src/style/reset.css">
     <link rel="stylesheet" href="src/style/base.css">
     <link rel="stylesheet" href="src/style/font.css">
+    <link rel="stylesheet" href="src/shared/header/header.style.css">
     <?php
     if (isset($pageName)) {
         $path = "src/pages/$pageName/$pageName.style.css";
@@ -43,7 +44,24 @@
             <link rel="stylesheet" href="<?= $path ?>">
     <?php }
     } ?>
-
 </head>
+
+<nav class="header-nav">
+    <input class="header-nav__checkbox" type="checkbox" id="nav-toggle">
+    <label class="header-nav__button" for="nav-toggle">
+        <img class="header-nav__burger" src="assets/img/icons/menu.png">
+    </label>
+    <ul class="header-nav__list">
+        <li class="header-nav__item <?php if ($pageName == 'home') echo 'header-nav__item--selected' ?>">
+            <a href="http://localhost/mr_l">Accueil</a>
+        </li>
+        <li class="header-nav__item <?php if ($pageName == 'event') echo 'header-nav__item--selected' ?>">
+            <a href="http://localhost/mr_l/event">Evènement</a>    
+        </li>
+        <li class="header-nav__item <?php if ($pageName == 'contact') echo 'header-nav__item--selected' ?>">
+            <a href="http://localhost/mr_l/contact">Contact</a>
+        </li>
+    </ul>
+</nav>
 
 <body>

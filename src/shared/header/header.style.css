@@ -1,0 +1,72 @@
+.header-nav {
+    position: fixed;
+    top: 24px;
+    right: 32px;
+}
+
+.header-nav::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    width: 30px;
+    height: 30px;
+    background: url(../../../assets/img/icons/ketchup.png) no-repeat center;
+    background-size: contain;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.header-nav__button {
+    position: relative;
+    z-index: 3;
+}
+
+.header-nav__burger {
+    width: 38px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-nav__list {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 36px;
+    width: 100%;
+    transition: left 0.3s ease-in-out;
+}
+
+.header-nav__checkbox {
+    display: none;
+}
+
+.header-nav__checkbox:checked ~ .header-nav__button .header-nav__burger {
+    transform: rotate(-90deg);
+}
+
+.header-nav__checkbox:checked ~ .header-nav__list {
+    left: 0;
+}
+
+.header-nav__item {
+    position: relative;
+    font-size: 26px;
+}
+
+.header-nav__item--selected::before {
+    content: '';
+    position: absolute;
+    top: 3.5px;
+    left: -26px;
+    width: 18px;
+    height: 18px;
+    background: url(../../../assets/img/icons/hot-dog.png) no-repeat center;
+    background-size: 100%;
+}

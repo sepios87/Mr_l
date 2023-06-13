@@ -39,6 +39,6 @@ switch ($origin) {
 // $description: the description of the page
 function displayPage($pageName, $title = 'Mr.l - Le roi du Hot Dog', $description = '')
 {
-    require_once 'src/shared/header.php';
+    require_once 'src/shared/header/header.php';
     require_once 'src/pages/' . $pageName . '/' . $pageName . '.php';
 }
