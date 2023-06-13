@@ -19,7 +19,6 @@ a:visited {
 h1, h2, h3 {
     line-height: 1.5;
     font-family: 'Lemon';
-    text-align: center;
 }
 
 .button, .button:active, .button:hover {
