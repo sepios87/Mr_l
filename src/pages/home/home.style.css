@@ -15,7 +15,6 @@
 
 .home-header .home-header__button {
     margin-top: 3vh;
-    color: white;
 }
 
 .home-supplier {
@@ -127,7 +126,7 @@
 
 .home-restaurant-menu__note span {
     font-weight: 400;
-    line-height: 2.0;
+    line-height: 2;
 }
 
 .home-gallery {
@@ -146,4 +145,80 @@
     min-height: 180px;
     width: 100%;
     object-fit: cover;
+}
+
+.home-lifestyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8vh 38px 0;
+}
+
+.home-lifestyle__mrl {
+    width: 100%;
+    max-width: 400px;
+}
+
+.home-lifestyle__slogan {
+    font-family: Antro;
+    font-size: min(15vw, 62px);
+    margin-top: 12px;
+}
+
+.home-lifestyle__title {
+    margin-top: 4vh;
+}
+
+.home-lifestyle__explain {
+    margin-top: 2vh;
+    text-align: center;
+    font-size: min(3.5vw, 16px);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.home-tee-shirt,
+.home-plate {
+    margin: 5vh 38px 0;
+}
+
+.home-tee-shirt__title,
+.home-plate__title {
+    text-decoration: underline;
+}
+
+.home-tee-shirt__list,
+.home-plate__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 2vh;
+}
+
+.home-tee-shirt__item,
+.home-plate__item {
+    margin-top: 2vh;
+}
+
+.home-tee-shirt__img,
+.home-plate__img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.home-tee-shirt__caption {
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+.home-tee-shirt__caption strong {
+    font-weight: 400;
+}
+
+.home-plate__explain {
+    margin-top: 2vh;
+    text-align: center;
+    font-size: min(3.5vw, 16px);
+    font-weight: 400;
+    line-height: 1.5;
 }
