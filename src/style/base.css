@@ -37,12 +37,12 @@ h3 {
     font-weight: 400;
 }
 
-.button {
+.button, .button:active, .button:hover {
     font-size: 12px;
     padding: 12px 26px;
     border-radius: 32px;
     font-weight: 600;
     font-family: 'Lemon';
     background-color: var(--accent-color);
-    color: white;
+    color: white !important;
 }

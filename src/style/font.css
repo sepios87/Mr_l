@@ -29,4 +29,9 @@
     src: url('../../assets/fonts/lemon_milk/LEMONMILK-Bold.otf');
 }
 
+/* Antro */
+@font-face {
+    font-family: LetsCoffee;
+    src: url('../../assets/fonts/Lets_coffee/Lets_coffee.otf');
+}
 

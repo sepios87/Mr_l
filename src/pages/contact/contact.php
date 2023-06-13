@@ -35,14 +35,16 @@
     </div>
     <ul class="contact-main-network">
         <li class="contact-main-network__item" > <a href="https://www.instagram.com/mrl_hotdog/" target="_blank">Instagram</a> </li>
+
+        <!-- TODO - Remplacer le mail  -->
         <li class="contact-main-network__item" > <a href="mailto:jolimonsieur.l@gmail.com">Mail</a> </li>
         <li class="contact-main-network__item" > <a href="tel:+33647378377">06 47 37 83 77</a> </li>
         <li class="contact-main-network__contain-logo"> 
             <a href="https://www.ubereats.com/fr/store/mr-l-hot-dog/VC3b85g4QCSp2dLENSGZmA?diningMode=DELIVERY" target="_blank" title="Redirection vers Uber Eat">
-                <img class="contact-main-network__logo" src="assets/icons/uber_eats.png" alt="Logo de Uber Eat">
+                <img class="contact-main-network__logo" src="assets/img/icons/uber_eats.png" alt="Logo de Uber Eat">
             </a>
             <a href="https://deliveroo.fr/fr/menu/toulouse/carmes-saint-etienne/mr-l-hot-dog?day=today&geohash=spc00bssurnd&time=ASAP" target="_blank" title="Redirection vers Deliveroo">
-                <img class="contact-main-network__logo" src="assets/icons/deliveroo.png" alt="Logo de Deliveroo">
+                <img class="contact-main-network__logo" src="assets/img/icons/deliveroo.png" alt="Logo de Deliveroo">
             </a>
         </li>
     </ul>
