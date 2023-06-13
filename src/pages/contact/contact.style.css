@@ -99,7 +99,7 @@
     font-weight: 400;
     font-size: 1.4rem;
     max-width: 380px;
-    padding: 10px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -116,7 +116,8 @@
 
 @media screen and (min-width: 600px) {
     .contact-main__info{
-        max-width: 500px;
+        max-width: 400px;
+        margin: 10px 0 0;
     }
 }
 
