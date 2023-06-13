@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 38px;
+    margin: 0 15px;
+    padding: 3px;
 }
 
 .event-header__logo {
@@ -15,4 +16,244 @@
 
 .event-header .event-header__button {
     margin-top: 3vh;
+}
+
+.event-header__title{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+
+@media screen and (min-width: 768px) {
+    .event-header__logo {
+        height: 80vh;
+        max-height: 520px;
+        min-height: 400px;
+    }
+}
+
+
+/* Proposition  */
+
+.event-proposition{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-proposition__image{
+    width: 100%;
+    max-width: 500px;
+}
+.event-proposition__title{
+    font-size: calc(1.3rem + .6vw);
+    width: 100%;
+    max-width: 500px;
+}
+
+.event-difference{
+    padding: 50px 5px;
+    text-align: center;
+}
+
+.event-difference__title{
+    font-size: 2.4rem;
+}
+
+.event-difference__text{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 200;
+}
+
+.event-difference__item{
+    margin: 20px 0;
+}
+
+.event-difference__image{
+    width: 100px;
+}
+
+.event-difference__text-petit{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10%;
+    font-weight: 200;
+}
+
+.event-difference__sub-title{
+    font-size: 20px; 
+    padding: 10px 0;
+}
+
+
+/* spécificité */
+
+.event-specific{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+
+}
+
+.event-specific__title{
+    font-size: 2.4rem;
+}
+
+.event-specific__text{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 200;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.event-specific__image{
+    width: 100%;
+}
+
+.event-specific__title--envie{
+    font-size: 2.4rem;  
+    position: relative;
+}
+
+.event-specific__title--envie::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 50px;
+    width: 50px;
+    right: -30px;
+    top: -15px;
+    display: block;
+    background-image: url('../../../assets/img/event/coeur.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(30deg);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .event-specific__image{
+        width: 50%;
+    }
+
+    .event-difference__list{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .event-difference__item{
+        width: 30%;
+    }
+
+    .event-difference{
+        padding: 50px 5px 0;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .event{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    .event-proposition{
+        padding: 0;
+        border-right: 1px solid rgb(210, 210, 210);
+    }
+    .event-specific{
+        min-width: 40%;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .event-specific__text{
+        max-width: 70%;
+    }
+    .event-specific__text{
+        margin: 0;
+    }
+    .event-specific__img-banniere{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+
+/* Image de bannière */
+.event__img-banniere{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+
+/* text SEO  */
+.event__text{
+    font-size: 20px;
+    line-height: 26px;
+    padding: 50px 20vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+.event-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event-info__title{
+    font-size: 20px;
+    line-height: 26px;
+    padding: 50px 20vw;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+}
+
+.event-info__text{
+    width: 90%;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 200;
+    text-align: left;
+    padding: 30px 0; 
+    padding-right: 10% ;
+}
+
+.event-info__text:nth-child(even){
+    text-align: right;
+    padding-left: 10% ;
+}
+
+.event-info__image{
+    width: 30%;
+}
+
+.event-info__contain{
+    width: 60%;
+}
+
+@media screen and (min-width: 1300px) {
+    .event-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
