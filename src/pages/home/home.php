@@ -143,3 +143,60 @@
         </li>
     </ul>
 </section>
+
+<section class="home-lifestyle">
+    <img class="home-lifestyle__mrl" src="assets/img/mrl.png" />
+    <span class="home-lifestyle__slogan">Lifestyle</span>
+    <h2 class="home-lifestyle__title">MR.L c'est + que de la street food</h2>
+    <div class="home-lifestyle__explain">
+        <h3>Viens shopper au resto nos <br /> tee-shirts et assiettes</h3>
+        <span>
+            Au <a href="https://goo.gl/maps/EkaBsxkriKoesbj48" target="_blank">8 rue du Languedoc</a>
+            <br /> Ou par DM sur <a href="https://www.instagram.com/mrl_hotdog/" target="_blank">notre insta</a> pour commander
+        </span>
+    </div>
+</section>
+
+<section class="home-tee-shirt">
+    <h2 class="home-tee-shirt__title">Nos tee-shirt</h2>
+    <ul class="home-tee-shirt__list">
+        <li class="home-tee-shirt__item">
+            <figure>
+                <img class="home-tee-shirt__img" src="assets/img/tee-shirt/tee-shirt_hot_dog.jpg" />
+                <figcaption class="home-tee-shirt__caption">
+                    <strong>Modèle HOT-DOG</strong><br />
+                    Du XS au L<br />
+                    29 euros
+                </figcaption>
+            </figure>
+        </li>
+        <li class="home-tee-shirt__item">
+            <figure>
+                <img class="home-tee-shirt__img" src="assets/img/tee-shirt/tee-shirt_stc.jpg" />
+                <figcaption class="home-tee-shirt__caption">
+                    <strong>Modèle STC</strong><br />
+                    Du XS au L <br />
+                    29 euros
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+</section>
+
+<section class="home-plate">
+    <h2 class="home-plate__title">Nos tee-shirt</h2>
+    <p class="home-plate__explain">
+        Assiettes faites à la main<br />
+        75 euros la douzaine<br />
+        7.5 euros l'unité<br />
+        *Quantité très limitée
+    </p>
+    <ul class="home-plate__list">
+        <li class="home-plate__item">
+            <img class="home-plate__img" src="assets/img/plate/boite_assietes.jpg">
+        </li>
+        <li class="home-plate__item">
+            <img class="home-plate__img" src="assets/img/plate/exposition_assietes.jpg">
+        </li>
+    </ul>
+</section>
