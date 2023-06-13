@@ -1,0 +1,18 @@
+.event-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 38px;
+}
+
+.event-header__logo {
+    height: 60vh;
+    max-height: 280px;
+    margin: 5vh 0;
+    width: 100%;
+    object-fit: contain;
+}
+
+.event-header .event-header__button {
+    margin-top: 3vh;
+}

@@ -8,6 +8,9 @@ switch ($origin) {
     case '/contact':
         displayPage('contact');
         break;
+    case '/event':
+        displayPage('event');
+        break;
     default:
         displayPage('404');
         break;
