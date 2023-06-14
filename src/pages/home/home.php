@@ -1,7 +1,7 @@
 <header class="home-header">
     <img class="home-header__logo" src="assets/img/logo.png" alt="Logo du restaurant">
     <h1 class="home-header__title">Le hot dog à la saucisse de toulouse</h1>
-    <a class="button home-header__button" href="#restaurant-menu" >Découvre nos recettes</a>
+    <a class="button home-header__button" href="#restaurant-menu" title="Lien pour aller vers la liste des hot-dog">Découvre nos recettes</a>
 </header>
 
 <section class="home-supplier">
@@ -35,7 +35,7 @@
                 <p class="home-supplier-item__title">Ketchup Sanchon</p>
                 <img class="home-supplier-item__img" src="assets/img/suppliers/ketchup_sanchon.jpg" alt="Ketchup Sanchon">
                 <figcaption class="home-supplier-item__figcaption">
-                    Des sauces locales et savoureuses tout droit venues de chez <a class="home-supplier-item__link" href="https://www.marcelsenchou.fr/" target="_blank">les ariègeois</a>.
+                    Des sauces locales et savoureuses tout droit venues de chez <a class="home-supplier-item__link" href="https://www.marcelsenchou.fr/" target="_blank" title="Lien vers le site des ariègeois">les ariègeois</a>.
                 </figcaption>
             </figure>
         </li>
@@ -44,7 +44,7 @@
                 <p class="home-supplier-item__title">Boucherie Côtelette</p>
                 <img class="home-supplier-item__img" src="assets/img/suppliers/stephane_boucherie_cotelette.jpg" alt="Stéphane de la boucherie Côtelette">
                 <figcaption class="home-supplier-item__figcaption">
-                    C'est chez Stéphane à la <a class="home-supplier-item__link" href="https://www.instagram.com/boucherie.cotelette/" target="_blank">boucherie cotelette</a> qu'on chope notre super saucisse de Toulouse. BIG diamêtre pour un BIG kiff. <br>
+                    C'est chez Stéphane à la <a class="home-supplier-item__link" href="https://www.instagram.com/boucherie.cotelette/" target="_blank" title="Lien vers l'instagram de Stéphane">boucherie cotelette</a> qu'on chope notre super saucisse de Toulouse. BIG diamêtre pour un BIG kiff. <br>
                     22 av. de l'URSS, 31400 Toulouse <br>
                 </figcaption>
             </figure>
@@ -133,7 +133,7 @@
                 - Nos ketchups viennent d'ariège
             </p>
         </div>
-        <h2 class="home-restaurant-menu__button"><a href="assets/files/carte_restaurant.pdf" target="_blank">Voir la carte</a></h2>
+        <h2 class="home-restaurant-menu__button"><a href="assets/files/carte_restaurant.pdf" target="_blank" title="Carte du restaurant">Voir la carte</a></h2>
     </div>
 
 </section>
@@ -171,8 +171,8 @@
     <div class="home-lifestyle__explain">
         <h3>Viens shopper au resto nos <br> tee-shirts et assiettes</h3>
         <span>
-            Au <a href="https://goo.gl/maps/EkaBsxkriKoesbj48" target="_blank">8 rue du Languedoc</a>
-            <br> Ou par DM sur <a href="https://www.instagram.com/mrl_hotdog/" target="_blank">notre insta</a> pour commander
+            Au <a href="https://goo.gl/maps/EkaBsxkriKoesbj48" target="_blank" title="Navigations vers 8 rue du Languedoc">8 rue du Languedoc</a>
+            <br> Ou par DM sur <a href="https://www.instagram.com/mrl_hotdog/" target="_blank" title="Lien de l'instagram de mr.L">notre insta</a> pour commander
         </span>
     </div>
 </section>

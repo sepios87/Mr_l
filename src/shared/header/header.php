@@ -54,13 +54,13 @@
     </label>
     <ul class="header-nav__list">
         <li class="header-nav__item <?php if ($pageName == 'home') echo 'header-nav__item--selected' ?>">
-            <a href="http://localhost/mr_l">Accueil</a>
+            <a href="http://localhost/mr_l" title="Bouton de navigation vers la page d'acceuil">Accueil</a>
         </li>
         <li class="header-nav__item <?php if ($pageName == 'event') echo 'header-nav__item--selected' ?>">
-            <a href="http://localhost/mr_l/event">Evènement</a>
+            <a href="http://localhost/mr_l/event" title="Bouton de navigation vers la page d'évènement">Evènement</a>
         </li>
         <li class="header-nav__item <?php if ($pageName == 'contact') echo 'header-nav__item--selected' ?>">
-            <a href="http://localhost/mr_l/contact">Contact</a>
+            <a href="http://localhost/mr_l/contact" title="Bouton de navigation vers la page de contact">Contact</a>>Contact</a>
         </li>
     </ul>
 </nav>

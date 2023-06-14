@@ -67,7 +67,7 @@
     </section>
 </main>
 <p class="event__text">Alors, prêt à embarquer pour un voyage culinaire délirant avec Monsieur L ? Réservez notre saucissclette dès maintenant pour apporter une touche de fun et de gourmandise à votre événement !</p>
-
+<a class="button event__button" href="http://localhost/mr_l/contact" title="Lien vers la page contact">Contacte nous</a>
 <img class="event__img-banniere" src="assets/img/event/hot_baby_dog_bannier.png" alt="Photo du hot baby dog">
 
 <section class="event-info">
