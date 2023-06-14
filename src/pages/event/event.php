@@ -62,7 +62,7 @@
 
 <p class="event__text">Alors, prêt à embarquer pour un voyage culinaire délirant avec Monsieur L ? Réservez notre saucissclette dès maintenant pour apporter une touche de fun et de gourmandise à votre événement !</p>
 
-<img class="event__img-banniere" src="assets/img/event/hot_baby_dog_bannier.png" alt="Photo du hot baby dog.">
+<img class="event__img-banniere" src="assets/img/event/hot_baby_dog_bannier.png" alt="Photo du hot baby dog">
 
 <section class="event-info">
     <h6 class="event-info__title">Vous recherchez une expérience culinaire unique et délicieusement décalée pour votre prochain événement à Toulouse ?</h6>

@@ -50,7 +50,7 @@
 <nav class="header-nav">
     <input class="header-nav__checkbox" type="checkbox" id="nav-toggle">
     <label class="header-nav__button" for="nav-toggle">
-        <img class="header-nav__burger" src="assets/img/icons/menu.png">
+        <img class="header-nav__burger" src="assets/img/icons/menu.png" alt="Menu burger">
     </label>
     <ul class="header-nav__list">
         <li class="header-nav__item <?php if ($pageName == 'home') echo 'header-nav__item--selected' ?>">
