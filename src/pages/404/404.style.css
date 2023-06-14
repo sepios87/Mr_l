@@ -23,7 +23,7 @@
 .not-found__title::before{
     content: '';
     position: absolute;
-    background-image: url('../../../assets/img/icons/hot-dog.png');
+    background-image: url('../../../assets/img/icons/hot_dog.png');
     width: 50px;
     height: 50px;
     right: -30px;

@@ -21,7 +21,7 @@
             <ul class="event-difference__list">
                 <li>
                     <figure class="event-difference__item">
-                        <img class="event-difference__image" src="assets/img/event/ampoule.svg" alt="Icon Ampoule">
+                        <img class="event-difference__image" src="assets/img/icons/ampoule.png" alt="Icon Ampoule">
                         <figcaption>
                             <h4 class="event-difference__sub-title">Unique</h4>
                             <p class="event-difference__text--small">Nos hot-dogs ne ressemblent à aucun autre avec identité gustative et esthétique unique.</p>
@@ -31,7 +31,7 @@
 
                 <li>
                     <figure class="event-difference__item">
-                        <img class="event-difference__image" src="assets/img/event/hot-dog.svg" alt="Icon Hot Dog">
+                        <img class="event-difference__image" src="assets/img/icons/hot_dog_black.png" alt="Icon Hot Dog">
                         <figcaption>
                             <h4 class="event-difference__sub-title">Créatif</h4>
                             <p class="event-difference__text--small">Gastonomie, mode, design... nous gardons un oeil plus qu'attentif pour, sans cesse, vous offrir le meilleur.</p>
@@ -41,7 +41,7 @@
 
                 <li>
                     <figure class="event-difference__item">
-                        <img class="event-difference__image" src="assets/img/event/eclair.svg" alt="Icon d'éclair">
+                        <img class="event-difference__image" src="assets/img/icons/eclair.png" alt="Icon d'éclair">
                         <figcaption>
                             <h4 class="event-difference__sub-title">Rapide</h4>
                             <p class="event-difference__text--small">Notre dernier temps record : 300 hot-dogs en 1 heure. Fast & Good</p>

@@ -135,12 +135,12 @@ h3 {
     content: '';
     position: absolute;
     z-index: -1;
-    height: 48px;
-    width: 48px;
+    height: 42px;
+    width: 42px;
     right: -28px;
     top: -16px;
     display: block;
-    background: url('../../../assets/img/event/coeur.jpg') no-repeat center;
+    background: url('../../../assets/img/icons/coeur.png') no-repeat center;
     background-size: contain;
     transform: rotate(30deg);
 }

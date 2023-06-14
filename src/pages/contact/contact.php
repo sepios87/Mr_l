@@ -48,12 +48,12 @@
     </div>
     <ul class="contact-main-delivery">
         <li class="contact-main-delivery__item">
-            <a href="https://www.ubereats.com/fr/store/mr-l-hot-dog/VC3b85g4QCSp2dLENSGZmA?diningMode=DELIVERY" target="_blank" title="Redirection vers Uber Eat" title="Redirection vers Uber Eat">
+            <a href="https://www.ubereats.com/fr/store/mr-l-hot-dog/VC3b85g4QCSp2dLENSGZmA?diningMode=DELIVERY" target="_blank" title="Redirection vers Uber Eat">
                 <img class="contact-main-delivery__logo" src="assets/img/icons/socials/uber_eats.png" alt="Logo de Uber Eat">
             </a>
         </li>
         <li class="contact-main-delivery__item">
-            <a href="https://deliveroo.fr/fr/menu/toulouse/carmes-saint-etienne/mr-l-hot-dog?day=today&geohash=spc00bssurnd&time=ASAP" target="_blank" title="Redirection vers Deliveroo" title="Redirection vers Deliveroo">
+            <a href="https://deliveroo.fr/fr/menu/toulouse/carmes-saint-etienne/mr-l-hot-dog?day=today&geohash=spc00bssurnd&time=ASAP" target="_blank" title="Redirection vers Deliveroo">
                 <img class="contact-main-delivery__logo" src="assets/img/icons/socials/deliveroo.png" alt="Logo de Deliveroo">
             </a>
         </li>

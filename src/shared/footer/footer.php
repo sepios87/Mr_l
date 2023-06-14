@@ -1,12 +1,12 @@
 <footer class="footer">
-    <section class="footer__section">
+    <div class="footer__section">
         <nav class="footer__nav">
             <ul class="footer-nav__list">
                 <li class="footer-nav__item">
                     <a href="http://localhost/mr_l" title="Bouton de navigation vers la d'acceuil">Accueil</a>
                 </li>
                 <li class="footer-nav__item">
-                    <a href="http://localhost/mr_l/event" title="Bouton de navigation vers la page d'évènement">Evènement</a>
+                    <a href="http://localhost/mr_l/event" title="Bouton de navigation vers la page d'évènement">Evenement</a>
                 </li>
                 <li class="footer-nav__item">
                     <a href="http://localhost/mr_l/contact" title="Bouton de navigation vers la page de contact">Contact</a>
@@ -30,8 +30,8 @@
                 </a>
             </li>
         </ul>
-    </section>
-    <section class="footer-legals">
+    </div>
+    <div class="footer-legals">
         <ul class="footer-legals__list">
             <li class="footer-legals__item">
                 <a href="#" title="Bouton pour télécharger les CGU">CGU</a>
@@ -46,7 +46,7 @@
                 <p class="footer__text">© 2023 Mr.L</p>
             </li>
         </ul>
-    </section>
+    </div>
 </footer>
 
 </body>
