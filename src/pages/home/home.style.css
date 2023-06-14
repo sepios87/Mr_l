@@ -94,7 +94,6 @@ h3 {
 
 .home-supplier-item__figcaption {
     font-size: 12px;
-    font-family: Lemon;
     font-weight: 300;
     margin-top: 8px;
     line-height: 1.2;
@@ -194,7 +193,6 @@ h3 {
     display: flex;
     justify-content: space-between;
     column-gap: 12px;
-    font-family: Lemon;
     font-weight: 400;
     font-size: 24px;
     flex-wrap: wrap;
@@ -225,7 +223,6 @@ h3 {
 }
 
 .home-restaurant-menu__note {
-    font-family: Lemon;
     font-weight: 300;
     font-size: 12px;
     margin-top: 4vh;
