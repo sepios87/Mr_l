@@ -18,32 +18,39 @@
             <p class="event-difference__text">Un amour inconditionnel pour la saucisse de Toulouse.</p>
             <p class="event-difference__text">Un rapport qualité/vitesse imbattable.</p>
 
-            <section class="event-difference__list">
-                <figure class="event-difference__item">
-                    <img class="event-difference__image" src="assets/img/event/ampoule.svg" alt="Icon Ampoule">
-                    <figcaption>
-                        <h4 class="event-difference__sub-title">Unique</h4>
-                        <p class="event-difference__text-petit">Nos hot-dogs ne ressemblent à aucun autre avec identité gustative et esthétique unique.</p>
-                    </figcaption>
-                </figure>
-                
-                <figure class="event-difference__item">
-                    <img class="event-difference__image" src="assets/img/event/hot-dog.svg" alt="Icon Hot Dog">
-                    <figcaption>
-                        <h4 class="event-difference__sub-title">Créatif</h4>
-                        <p class="event-difference__text-petit">Gastonomie, mode, design... nous gardons un oeil plus qu'attentif pour, sans cesse, vous offrir le meilleur.</p>
-                    </figcaption>
-                </figure>
-                
-                <figure class="event-difference__item">
-                    <img class="event-difference__image" src="assets/img/event/eclair.svg" alt="Icon d'éclair">
-                    <figcaption>
-                        <h4 class="event-difference__sub-title">Rapide</h4>
-                        <p class="event-difference__text-petit">Notre dernier temps record : 300 hot-dogs en 1 heure. Fast & Good</p>
-                    </figcaption>
-                </figure>
-            </section>
-            
+            <ul class="event-difference__list">
+                <li>
+                    <figure class="event-difference__item">
+                        <img class="event-difference__image" src="assets/img/event/ampoule.svg" alt="Icon Ampoule">
+                        <figcaption>
+                            <h4 class="event-difference__sub-title">Unique</h4>
+                            <p class="event-difference__text--small">Nos hot-dogs ne ressemblent à aucun autre avec identité gustative et esthétique unique.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="event-difference__item">
+                        <img class="event-difference__image" src="assets/img/event/hot-dog.svg" alt="Icon Hot Dog">
+                        <figcaption>
+                            <h4 class="event-difference__sub-title">Créatif</h4>
+                            <p class="event-difference__text--small">Gastonomie, mode, design... nous gardons un oeil plus qu'attentif pour, sans cesse, vous offrir le meilleur.</p>
+                        </figcaption>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="event-difference__item">
+                        <img class="event-difference__image" src="assets/img/event/eclair.svg" alt="Icon d'éclair">
+                        <figcaption>
+                            <h4 class="event-difference__sub-title">Rapide</h4>
+                            <p class="event-difference__text--small">Notre dernier temps record : 300 hot-dogs en 1 heure. Fast & Good</p>
+                        </figcaption>
+                    </figure>
+                </li>
+
+            </ul>
+
         </div>
     </section>
     <section class="event-specific">
@@ -51,17 +58,16 @@
         <p class="event-specific__text">Plus que de la street-food, une vraie marque autour du hot-dog toulousain. Une scénographie et des outils adaptés à chacun de vos events.</p>
         <p class="event-specific__text">Big hot-dogs, babies hot-dogs format dégustation, contenants personnalisés, scénographie...</p>
         <img class="event-specific__image" src="assets/img/event/food_truck.jpg" alt="Photo du food truck de Mr L">
-       
-            
+
+
         <h3 class="event-specific__title--envie">Notre envie </h3>
         <p class="event-specific__text">Sucitez la surprise en mangeant un hot-dog sexy, local et gourmand. Épatez vos convives/clients de la mise en scène à l'assiette.</p>
         <img class="event-specific__img-banniere" src="assets/img/gallery/baby_hot_dogs.jpg" alt="Lots de trois petits hot-dogs">
-    
+
     </section>
 </main>
-
 <p class="event__text">Alors, prêt à embarquer pour un voyage culinaire délirant avec Monsieur L ? Réservez notre saucissclette dès maintenant pour apporter une touche de fun et de gourmandise à votre événement !</p>
-
+<a class="button event__button" href="http://localhost/mr_l/contact">Contacte nous</a>
 <img class="event__img-banniere" src="assets/img/event/hot_baby_dog_bannier.png" alt="Photo du hot baby dog.">
 
 <section class="event-info">
@@ -69,10 +75,9 @@
     <div class="event-info__contain">
         <p class="event-info__text">Ne cherchez plus ! Monsieur L est le roi du hot-dog fait maison, préparé avec amour et des ingrédients locaux de qualité. Préparez-vous à régaler vos clients et invités avec nos créations originales, savoureuses et audacieuses.</p>
         <p class="event-info__text">Notre saucissclette est prête à faire sensation lors de votre événement ! Que vous organisiez une fête d'entreprise, une rencontre sportive, une foire, un festival ou toute autre occasion spéciale, notre équipe dynamique et passionnée vous garantit une expérience culinaire mémorable qui ravira les papilles de tous vos convives.</p>
-        <p class="event-info__text">Lorsque vous réservez notre saucissclette,  vous bénéficiez non seulement de délices culinaires uniques, mais aussi d'une équipe chaleureuse et attentionnée. Nous sommes passionnés par ce que nous faisons, et notre objectif est de rendre votre événement mémorable et amusant. Nous mettons tout en œuvre pour créer une atmosphère conviviale, où les rires, les sourires et les délices se mélangent pour une expérience inoubliable.</p>
+        <p class="event-info__text">Lorsque vous réservez notre saucissclette, vous bénéficiez non seulement de délices culinaires uniques, mais aussi d'une équipe chaleureuse et attentionnée. Nous sommes passionnés par ce que nous faisons, et notre objectif est de rendre votre événement mémorable et amusant. Nous mettons tout en œuvre pour créer une atmosphère conviviale, où les rires, les sourires et les délices se mélangent pour une expérience inoubliable.</p>
     </div>
     <img class="event-info__image" src="assets/img/gallery/hot_dog_toutouyoutou.jpg" alt="Photo du hot dog toutouyoutou">
 
-    
-</section>
 
+</section>

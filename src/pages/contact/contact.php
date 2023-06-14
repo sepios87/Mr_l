@@ -31,10 +31,10 @@
                 <span class="contact-schedule__day">Jeudi</span>
                 <p>11H30 - 14H / 19H - 21H30</p>
             </li>
-            <l class="contact-schedule__item">
+            <li class="contact-schedule__item">
                 <span class="contact-schedule__day">Vendredi</span>
-                <p> 11H30 - 14H / 19H - 21H30</p>
-            </l>
+                <p>11H30 - 14H / 19H - 21H30</p>
+            </li>
             <li class="contact-schedule__item">
                 <span class="contact-schedule__day">Samedi</span>
                 <p> 11H30 - 14H / 19H - 21H30</p>
