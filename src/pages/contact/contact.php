@@ -44,7 +44,7 @@
                 <p> FERME </p>
             </li>
         </ul>
-        <h4 class="contact-schedule__info">On est aussi aux <a href="https://goo.gl/maps/SsMg4vSSEApq5uGS6" target="_blank" title="Bouton pour naviguer vers la HALLES DE LA CITÉ">HALLES DE LA CITÉ</a> Du mardi au Samedi soir ! </h4>
+        <h4 class="contact-schedule__info">On est aussi aux <a href="https://goo.gl/maps/SsMg4vSSEApq5uGS6" target="_blank" title="Bouton pour naviguer vers la HALLES DE LA CITÉ">HALLES DE LA CITÉ</a> Du mardi au Samedi soir et <a href="https://goo.gl/maps/cTwuBuNwMWx5KnAQ8" target="_blank" title="Bouton pour naviguer vers l'allées Jules guesde">aux allées Jules guesde </a> avec la saucissclette ! </h4>
     </div>
     <ul class="contact-main-delivery">
         <li class="contact-main-delivery__item">
