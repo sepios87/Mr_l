@@ -104,14 +104,14 @@
 
 .header-loading__pain {
     fill: none;
-    stroke: #000000;
+    stroke: var(--primary-color);
     stroke-width: 22.269;
     stroke-miterlimit: 10;
 }
 
 .header-loading__sauce {
     fill: none;
-    stroke: #FF0000;
+    stroke: var(--accent-color);
     stroke-width: 20.0;
     stroke-linecap: round;
     stroke-dasharray: 770;
