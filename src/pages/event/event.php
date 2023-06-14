@@ -23,7 +23,7 @@
                     <img class="event-difference__image" src="assets/img/event/ampoule.svg" alt="Icon Ampoule">
                     <figcaption>
                         <h4 class="event-difference__sub-title">Unique</h4>
-                        <p class="event-difference__text-petit">Nos hot-dogs ne ressemblent à aucun autre et nous travaillons pour conserver cette identité gustative et esthétique.</p>
+                        <p class="event-difference__text-petit">Nos hot-dogs ne ressemblent à aucun autre avec identité gustative et esthétique unique.</p>
                     </figcaption>
                 </figure>
                 

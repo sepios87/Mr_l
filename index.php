@@ -10,4 +10,4 @@ require_once 'src/core/router.php';
 ?>
 
 <?php
-require_once 'src/shared/footer.php';
+require_once 'src/shared/footer/footer.php';

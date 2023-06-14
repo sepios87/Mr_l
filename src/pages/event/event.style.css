@@ -169,7 +169,7 @@
     .event{
         display: flex;
         justify-content: space-around;
-        padding-top: 20px;
+        margin-top: 38px;
     }
 
     .event-proposition{

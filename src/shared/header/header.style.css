@@ -1,5 +1,6 @@
 .header-nav {
     position: fixed;
+    z-index: 99;
     top: 24px;
     right: 32px;
 }
@@ -14,7 +15,7 @@
     background: url(../../../assets/img/icons/ketchup.png) no-repeat center;
     background-size: contain;
     opacity: 0.9;
-    z-index: 2;
+    z-index: 9;
 }
 
 .header-nav__button {
@@ -69,4 +70,92 @@
     height: 18px;
     background: url(../../../assets/img/icons/hot-dog.png) no-repeat center;
     background-size: 100%;
+}
+
+.header-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loading 2.8s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+    62% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+.header-loading__svg {
+    width: 280px;
+    height: 280px;
+}
+
+.header-loading__pain {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 22.269;
+    stroke-miterlimit: 10;
+}
+
+.header-loading__sauce {
+    fill: none;
+    stroke: #FF0000;
+    stroke-width: 20.0;
+    stroke-linecap: round;
+    stroke-dasharray: 770;
+    animation: dash 2.3s ease-in-out alternate;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 770;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-nav {
+        position: absolute;
+    }
+
+    .header-nav__burger {
+        display: none;
+    }
+
+    .header-nav::before {
+        display: none;
+    }
+
+    .header-nav__list {
+        position: initial;
+        flex-direction: row;
+        column-gap: 24px;
+        background-color: transparent;
+    }
+
+    .header-nav__item {
+        font-size: 18px;
+    }
+
+    .header-nav__item--selected a {
+        color: var(--accent-color);
+    }
+
+    .header-nav__item--selected::before {
+        display: none;
+    }
 }

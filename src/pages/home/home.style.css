@@ -124,7 +124,7 @@ h3 {
         grid-template-rows: repeat(2, 1fr);
         column-gap: 8%;
         row-gap: 36px;
-        width: 82%;
+        width: 86%;
     }
 
     .home-supplier__explain {
