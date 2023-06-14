@@ -34,9 +34,6 @@
     <div class="footer-legals">
         <ul class="footer-legals__list">
             <li class="footer-legals__item">
-                <a href="#" title="Bouton pour télécharger les CGU">CGU</a>
-            </li>
-            <li class="footer-legals__item">
                 <a href="#" title="Bouton pour télécharger les mentions légales">Mentions légales</a>
             </li>
             <li class="footer-legals__item">
