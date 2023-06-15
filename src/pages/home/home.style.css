@@ -147,7 +147,7 @@ h3 {
         background-size: contain;
         background-repeat: no-repeat;
         width: 118px;
-        height: 100%;
+        height: 118px;
         top: 36%;
         transition: transform 0.3s ease-in-out;
     }
@@ -431,13 +431,13 @@ h3 {
     width: 100%;
     border-radius: 2px;
     object-fit: cover;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 
 .home-tee-shirt__img:hover,
 .home-plate__img:hover {
-    transform: scale(1.08);
+    transform: scale(1.06);
 }
 
 .home-tee-shirt__caption {
