@@ -12,7 +12,13 @@
         <input class="login-form__input" type="password" name="password" id="password" placeholder="Mot de passe" required>
     </label>
     
-    <p class="login-form__error">Email ou mot de passe incorrect </p>
+    <?php if(isset($_SESSION['errorAuthentification'])){ ?>
+        <p class="login-form__error"><?= $_SESSION['errorAuthentification']['email'] ?></p>
+    <?php } ?>
 
     <input type="submit" value="Login" class="button">
 </form>
+
+<?php 
+if(isset($_SESSION['errorAuthentification'])) unset($_SESSION['errorAuthentification']) ; 
+?>

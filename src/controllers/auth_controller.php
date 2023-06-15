@@ -21,10 +21,10 @@ switch ($action) {
             if ($auth_repository->login($_POST['email'], $_POST['password'])) {
                 header('Location: ' . BASE_URL . '/dashboard');
             } else {
-                echo 'login failed';
+                header('Location: ' . BASE_URL . '/login');
             }
         } else {
-            echo 'login failed';
+            header('Location: ' . BASE_URL . '/');
         }
         break;
     case Auth::Logout->value:
