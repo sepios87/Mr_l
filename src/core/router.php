@@ -44,6 +44,14 @@ switch ($origin) {
             true,
         );
         break;
+    case '/manage-schedule': 
+        displayPage(
+            'manage-schedule',
+            'Gestion des horaires - Monsieur L',
+            "Gestion des horaires de Mr.L, le roi du hot-dog toulousain.",
+            true,
+        );
+        break;
     default:
         displayPage(
             '404',
