@@ -1,5 +1,7 @@
 <?php 
 
+define('BASE_URL', 'http://localhost/mr_l');
+
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'mrl');
 define('DB_USER', 'root');

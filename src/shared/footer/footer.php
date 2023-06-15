@@ -16,17 +16,17 @@
         <ul class="footer-socials">
             <li class="footer-socials__item">
                 <a href="tel:+33647378377" rel="noopener" title="Bouton de contact téléphonique">
-                    <img class="footer-socials__img" src="assets/img/icons/socials/phone.png" alt="Logo de téléphone">
+                    <img class="footer-socials__img" src="<?= getImagePath() ?>/icons/socials/phone.png" alt="Logo de téléphone">
                 </a>
             </li>
             <li class="footer-socials__item">
                 <a href="mailto:jolimonsieur.l@gmail.com" rel="noopener" title="Bouton de contact par mail">
-                    <img class="footer-socials__img" src="assets/img/icons/socials/mail.png" alt="Logo de mail">
+                    <img class="footer-socials__img" src="<?= getImagePath() ?>/icons/socials/mail.png" alt="Logo de mail">
                 </a>
             </li>
             <li class="footer-socials__item">
                 <a href="https://www.instagram.com/mrl_hotdog/" target="_blank" title="Bouton de contact vers instagram">
-                    <img class="footer-socials__img" src="assets/img/icons/socials/instagram.png" alt="Logo d'instagram">
+                    <img class="footer-socials__img" src="<?= getImagePath() ?>/icons/socials/instagram.png" alt="Logo d'instagram">
                 </a>
             </li>
         </ul>

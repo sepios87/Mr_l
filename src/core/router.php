@@ -23,6 +23,21 @@ switch ($origin) {
             "Envie d'ajouter une touche savoureuse à votre prochain évènement ? Contactez Monsieur L, expert en hot dogs, pour une expérience inoubliable !",
         );
         break;
+    case '/login':
+        displayPage(
+            'login',
+            'Connexion - Monsieur L',
+            'Connectez-vous à votre compte Mr.L pour commander votre hot-dog préféré !'
+        );
+        break;
+    case '/dashboard':
+        displayPage(
+            'dashboard',
+            'Administration - Monsieur L',
+            "Espace d'administration de Mr.L, le roi du hot-dog toulousain.",
+            true,
+        );
+        break;
     default:
         displayPage(
             '404',
@@ -37,8 +52,11 @@ switch ($origin) {
 // $pageName: the name of the page to display
 // $title: the title of the page
 // $description: the description of the page
-function displayPage($pageName, $title = 'Mr.l - Le roi du Hot Dog', $description = '')
+function displayPage($pageName, $title = 'Mr.l - Le roi du Hot Dog', $description = '', $withGuard = false)
 {
+    if ($withGuard && !isset($_SESSION['user'])) {
+        header('Location: ' . BASE_URL . '/login');
+    }
     require_once 'src/shared/header/header.php';
     require_once 'src/pages/' . $pageName . '/' . $pageName . '.php';
 }

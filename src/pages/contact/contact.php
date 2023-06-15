@@ -10,7 +10,7 @@
 <main class="contact-main">
     <div class="contact-address">
         <h2 class="contact-address__title"><a href="https://goo.gl/maps/EkaBsxkriKoesbj48" target="_blank" title="Bouton pour naviguer vers l'addresse 8 rue du languedoc 31000 toulouse">8 rue du languedoc 31000 toulouse</a></h2>
-        <iframe class="contact-address__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11558.210831049193!2d1.4452624!3d43.5950323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebd9108d90df3%3A0x4f1f862546ce80ab!2sMR.L!5e0!3m2!1sfr!2sfr!4v1686732720794!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="contact-address__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11558.210831049193!2d1.4452624!3d43.5950323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebd9108d90df3%3A0x4f1f862546ce80ab!2sMR.L!5e0!3m2!1sfr!2sfr!4v1686732720794!5m2!1sfr!2sfr" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="contact-schedule">
         <h2 class="contact-schedule__title">Horaires</h2>
@@ -49,12 +49,12 @@
     <ul class="contact-main-delivery">
         <li class="contact-main-delivery__item">
             <a href="https://www.ubereats.com/fr/store/mr-l-hot-dog/VC3b85g4QCSp2dLENSGZmA?diningMode=DELIVERY" target="_blank" title="Redirection vers Uber Eat">
-                <img class="contact-main-delivery__logo" src="assets/img/icons/socials/uber_eats.png" alt="Logo de Uber Eat">
+                <img class="contact-main-delivery__logo" src="<?= getImagePath() ?>/icons/socials/uber_eats.png" alt="Logo de Uber Eat">
             </a>
         </li>
         <li class="contact-main-delivery__item">
             <a href="https://deliveroo.fr/fr/menu/toulouse/carmes-saint-etienne/mr-l-hot-dog?day=today&geohash=spc00bssurnd&time=ASAP" target="_blank" title="Redirection vers Deliveroo">
-                <img class="contact-main-delivery__logo" src="assets/img/icons/socials/deliveroo.png" alt="Logo de Deliveroo">
+                <img class="contact-main-delivery__logo" src="<?= getImagePath() ?>/icons/socials/deliveroo.png" alt="Logo de Deliveroo">
             </a>
         </li>
     </ul>

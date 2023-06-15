@@ -25,15 +25,21 @@ h3 {
 .event-header__title {
     font-size: min(5vw, 28px);
     text-align: center;
-    margin: 10px 0;
+    margin: 2vh 0;
     line-height: 1.5;
+}
+
+.event-header__subtitle {
+    font-size: min(3vw, 18px);
+    margin: 2vh 0;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
     .event-header__logo {
-        height: 64vh;
+        height: 66vh;
         max-height: 520px;
-        min-height: 400px;
+        min-height: 420px;
     }
 }
 
@@ -235,12 +241,15 @@ h3 {
     font-weight: 200;
     text-align: left;
     margin: 8vh 0;
-    padding-right: 10%;
 }
 
 .event-info__text:nth-child(even) {
     text-align: right;
-    margin-left: 12%;
+}
+
+.event-info__text:nth-child(odd) {
+    text-align: left;
+    margin-right: 24%;
 }
 
 .event-info__image {
@@ -249,7 +258,7 @@ h3 {
 }
 
 .event-info__contain {
-    width: 50%;
+    width: 60%;
 }
 
 @media screen and (min-width: 1300px) {
@@ -265,6 +274,6 @@ h3 {
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-        width: 100vw;
+        margin: 0 36px;
     }
 }
