@@ -1,19 +1,30 @@
-<?php 
+<?php
 
-class Schedule {
+class Schedule
+{
+    private $id;
     private $day;
     private $hourly;
 
-    public function __construct($day, $hourly) {
+    public function __construct($id, $day, $hourly)
+    {
+        $this->id = $id;
         $this->day = $day;
         $this->hourly = $hourly;
     }
 
-    public function getDay() {
+    public function getDay()
+    {
         return $this->day;
     }
 
-    public function getHourly() {
+    public function getHourly()
+    {
         return $this->hourly;
+    }
+
+    public function __toString()
+    {
+        return $this->id . ' ' . $this->day . ' ' . $this->hourly;
     }
 }

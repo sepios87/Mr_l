@@ -27,6 +27,9 @@ switch ($origin) {
         );
         break;
     case '/login':
+        if (isset($_SESSION['user'])) {
+            header('Location: ' . BASE_URL . '/dashboard');
+        }
         displayPage(
             'login',
             'Connexion - Monsieur L',

@@ -20,7 +20,7 @@ class AuthRepository
                 return true;
             }
         }
-        $_SESSION['errorAuthentification'] = ['email' => 'Email ou mot de passe incorrect']; 
+        $_SESSION['errorAuthentification'] = ['email' => 'Email ou mot de passe incorrect'];
         return false;
     }
 
