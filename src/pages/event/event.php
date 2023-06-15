@@ -59,11 +59,9 @@
         <p class="event-specific__text">Big hot-dogs, babies hot-dogs format dégustation, contenants personnalisés, scénographie...</p>
         <img class="event-specific__image" src="<?= getImagePath() ?>/event/food_truck.jpg" alt="Photo du food truck de Mr L">
 
-
         <h3 class="event-specific__title--envie">Notre envie </h3>
         <p class="event-specific__text">Sucitez la surprise en mangeant un hot-dog sexy, <strong>local et gourmand</strong>. Épatez vos convives/clients de la mise en scène à l'assiette.</p>
         <img class="event-specific__img-banniere" src="<?= getImagePath() ?>/gallery/baby_hot_dogs.jpg" alt="Lots de trois petits hot-dogs">
-
     </section>
 </main>
 <p class="event__text">Alors, prêt à embarquer pour un voyage culinaire délirant avec Monsieur L ? Réservez notre saucissclette dès maintenant pour apporter une touche de fun et de gourmandise à votre événement !</p>
