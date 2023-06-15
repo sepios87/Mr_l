@@ -16,7 +16,7 @@
         <p class="login-form__error"><?= $_SESSION['errorAuthentification']['email'] ?></p>
     <?php } ?>
 
-    <input type="submit" value="Login" class="button">
+    <input type="submit" value="Connexion" class="button">
 </form>
 
 <?php 
