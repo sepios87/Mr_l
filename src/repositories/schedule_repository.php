@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 class ScheduleRepository {
   private $pdoRepository;
 
@@ -8,7 +10,8 @@ class ScheduleRepository {
   }
 
   public function getAll() {
-    return $this->pdoRepository->getAll('schedule');
+    $shedule = $this->pdoRepository->getAll('schedule');
+    $_SESSION['schedule'] = $shedule;
   }
 
   public function updateDay($id, $data) {
