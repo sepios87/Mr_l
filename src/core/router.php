@@ -52,6 +52,7 @@ switch ($origin) {
 // $pageName: the name of the page to display
 // $title: the title of the page
 // $description: the description of the page
+// $withGuard: if true, the page will be displayed only if the user is logged in
 function displayPage($pageName, $title = 'Mr.l - Le roi du Hot Dog', $description = '', $withGuard = false)
 {
     if ($withGuard && !isset($_SESSION['user'])) {

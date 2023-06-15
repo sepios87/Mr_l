@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 class AuthRepository
 {
     private $pdoRepository;
@@ -11,8 +13,7 @@ class AuthRepository
 
     public function login($email, $password)
     {
-        $user = $this->pdoRepository->getByField('users', 'email', $email);
-
+        $user = $this->pdoRepository->getByField('user', 'email', $email);
         if (isset($user)) {
             if ($this->password_verify($password, $user['password'])) {
                 $_SESSION['user'] = $user['email'];

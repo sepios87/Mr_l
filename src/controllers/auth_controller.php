@@ -13,8 +13,6 @@ enum Auth: string
 
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
-} else {
-    $action = Auth::Logout;
 }
 
 switch ($action) {
@@ -34,6 +32,6 @@ switch ($action) {
         header('Location: ' . BASE_URL . '/');
         break;
     default:
-        echo 'default';
+        header('Location: ' . BASE_URL . '/');
         break;
 }
