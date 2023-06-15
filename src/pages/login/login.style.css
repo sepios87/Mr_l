@@ -45,7 +45,7 @@
 .login-form__input{
     width: 250px;
     height: 30px;
-    border-radius: 2px;
+    border-radius: 2px 2px 0 0;
     border: transparent;
     border-bottom: 1px solid var(--primary-color);
     padding: 0 10px;

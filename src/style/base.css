@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
     background-color: var(--secondary-color);
+    font-family: Lemon, Trebuchet MS;
 }
 
 a,
@@ -18,17 +19,21 @@ a:visited {
     color: #000;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.5;
-    font-family: 'Lemon';
 }
 
-.button, .button:active, .button:hover {
+.button,
+.button:active,
+.button:hover {
+    cursor: pointer;
     font-size: 12px;
     padding: 12px 26px;
     border-radius: 32px;
     font-weight: 600;
-    font-family: 'Lemon';
+    font-family: Lemon, Trebuchet MS;
     background-color: var(--accent-color);
     color: white !important;
     text-align: center;

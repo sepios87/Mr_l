@@ -64,6 +64,12 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="header-scroll-container">
+            <a class="header-scroll-container__link" href="#">
+                <img class="header-scroll-container__img" src="<?= getImagePath() ?>/icons/top_arrow.png" alt="Flèche vers le haut">
+            </a>
+        </div>
     <?php } ?>
 
     <?php if (!isset($_SESSION['loading'])) {
