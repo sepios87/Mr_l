@@ -2,6 +2,7 @@
 
 include_once '../core/config.php';
 include_once '../repositories/pdo_repository.php';
+include_once '../models/schedule.class.php';
 include_once '../repositories/schedule_repository.php';
 $schedule_repository = new ScheduleRepository(PdoRepository::getInstance());
 

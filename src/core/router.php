@@ -10,7 +10,7 @@ switch ($origin) {
         );
         break;
     case '/contact':
-        if (!isset($_SESSION['shedule'])) {
+        if (!isset($_SESSION['schedules'])) {
             header('Location: '. BASE_URL .'/src/controllers/schedule_controller.php?action=get');
         }
         displayPage(

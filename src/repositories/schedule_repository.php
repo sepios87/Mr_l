@@ -10,8 +10,12 @@ class ScheduleRepository {
   }
 
   public function getAll() {
-    $shedule = $this->pdoRepository->getAll('schedule');
-    $_SESSION['schedule'] = $shedule;
+    $shedules = $this->pdoRepository->getAll('schedule');
+    $shedules = array_map(function($shedule) {
+      return new Schedule($shedule['day'], $shedule['hourly']);
+    }, $shedules);
+    $_SESSION['schedules'] = $shedules;
+    var_dump($_SESSION['schedule']);
   }
 
   public function updateDay($id, $data) {
