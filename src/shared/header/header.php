@@ -40,30 +40,32 @@
         $path = "src/pages/$pageName/$pageName.style.css";
         if (file_exists($path)) {
     ?>
-            <link rel="stylesheet" href="<?= BASE_URL.'/'.$path ?>">
+            <link rel="stylesheet" href="<?= BASE_URL . '/' . $path ?>">
     <?php }
     } ?>
 </head>
 
 <body>
-    <nav class="header-nav">
-        <input class="header-nav__checkbox" type="checkbox" id="nav-toggle">
-        <label class="header-nav__button" for="nav-toggle">
-            <img class="header-nav__burger" src="<?= getImagePath() ?>/icons/menu.png" alt="Menu burger">
-        </label>
-        <ul class="header-nav__list">
-            <li class="header-nav__item <?php if ($pageName == 'home') echo 'header-nav__item--selected' ?>">
-                <a href="http://localhost/mr_l" title="Bouton de navigation vers la page d'acceuil">Accueil</a>
-            </li>
-            <li class="header-nav__item <?php if ($pageName == 'event') echo 'header-nav__item--selected' ?>">
-                <a href="http://localhost/mr_l/event" title="Bouton de navigation vers la page d'évènement">Evenement</a>
-            </li>
-            <li class="header-nav__item <?php if ($pageName == 'contact') echo 'header-nav__item--selected' ?>">
-                <a href="http://localhost/mr_l/contact" title="Bouton de navigation vers la page de contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    
+    <?php if (!$withGuard) { ?>
+        <nav class="header-nav">
+            <input class="header-nav__checkbox" type="checkbox" id="nav-toggle">
+            <label class="header-nav__button" for="nav-toggle">
+                <img class="header-nav__burger" src="<?= getImagePath() ?>/icons/menu.png" alt="Menu burger">
+            </label>
+            <ul class="header-nav__list">
+                <li class="header-nav__item <?php if ($pageName == 'home') echo 'header-nav__item--selected' ?>">
+                    <a href="http://localhost/mr_l" title="Bouton de navigation vers la page d'acceuil">Accueil</a>
+                </li>
+                <li class="header-nav__item <?php if ($pageName == 'event') echo 'header-nav__item--selected' ?>">
+                    <a href="http://localhost/mr_l/event" title="Bouton de navigation vers la page d'évènement">Evenement</a>
+                </li>
+                <li class="header-nav__item <?php if ($pageName == 'contact') echo 'header-nav__item--selected' ?>">
+                    <a href="http://localhost/mr_l/contact" title="Bouton de navigation vers la page de contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    <?php } ?>
+
     <?php if (!isset($_SESSION['loading'])) {
         $_SESSION['loading'] = true;
     ?>

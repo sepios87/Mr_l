@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 // Importer les classes avant de démarrer la session pour la deserialisation
 require_once 'src/models/schedule.class.php';
