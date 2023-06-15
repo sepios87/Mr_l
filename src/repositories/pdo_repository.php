@@ -44,7 +44,7 @@ class PdoRepository {
 
   public function update($table, $id, $data) {
     $set = [];
-    foreach ($data as $key => $value) {
+    foreach ($data as $key) {
       $set[] = "$key = ?";
     }
     $values = array_values($data);

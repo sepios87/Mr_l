@@ -15,34 +15,15 @@
     <div class="contact-schedule">
         <h2 class="contact-schedule__title">Horaires</h2>
         <ul class="contact-schedule__list">
-            <li class="contact-schedule__item">
-                <span class="contact-schedule__day">Lundi</span>
-                <p>11H30 - 14H / 19H - 21H30</p>
-            </li>
-            <li class="contact-schedule__item">
-                <span class="contact-schedule__day">Mardi</span>
-                <p>11H30 - 14H / 19H - 21H30</p>
-            </li>
-            <li class="contact-schedule__item">
-                <span class="contact-schedule__day">Mercredi</span>
-                <p>11H30 - 14H / 19H - 21H30</p>
-            </li>
-            <li class="contact-schedule__item">
-                <span class="contact-schedule__day">Jeudi</span>
-                <p>11H30 - 14H / 19H - 21H30</p>
-            </li>
-            <li class="contact-schedule__item">
-                <span class="contact-schedule__day">Vendredi</span>
-                <p>11H30 - 14H / 19H - 21H30</p>
-            </li>
-            <li class="contact-schedule__item">
-                <span class="contact-schedule__day">Samedi</span>
-                <p> 11H30 - 14H / 19H - 21H30</p>
-            </li>
-            <li class="contact-schedule__item">
-                <span class="contact-schedule__day">Dimanche</span>
-                <p> FERME </p>
-            </li>
+            <?php
+            if (isset($_SESSION['schedules'])) {
+                foreach ($_SESSION['schedules'] as $schedule) {
+                    echo '<li class="contact-schedule__item">';
+                    echo '<span class="contact-schedule__day">' . $schedule->getDay() . '</span>';
+                    echo '<p>' . $schedule->getHourly() . '</p>';
+                    echo '</li>';
+                }
+            } ?>
         </ul>
         <h4 class="contact-schedule__info">On est aussi aux <a href="https://goo.gl/maps/SsMg4vSSEApq5uGS6" target="_blank" title="Bouton pour naviguer vers la HALLES DE LA CITÉ">HALLES DE LA CITÉ</a> Du mardi au Samedi soir et <a href="https://goo.gl/maps/cTwuBuNwMWx5KnAQ8" target="_blank" title="Bouton pour naviguer vers l'allées Jules guesde">aux allées Jules guesde </a> avec la saucissclette ! </h4>
     </div>
