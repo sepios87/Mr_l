@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -26,47 +24,46 @@
     <meta property="og:title" content="<?= $description ?>">
     <meta property="og:type" content="siteweb">
     <meta property="og:url" content="https://mrlhotdog.com/">
-    <meta property="og:image" content="assets/img/logo.png">
+    <meta property="og:image" content="<?= getImagePath() ?>/logo.png">
 
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
-    <link rel="icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="<?= getAssetPath() ?>/ico/apple-touch-icon.png">
+    <link rel="icon" href="<?= getAssetPath() ?>/ico/favicon.ico">
 
-    <link rel="stylesheet" href="src/style/reset.css">
-    <link rel="stylesheet" href="src/style/base.css">
-    <link rel="stylesheet" href="src/style/font.css">
-    <link rel="stylesheet" href="src/shared/header/header.style.css">
-    <link rel="stylesheet" href="src/shared/footer/footer.style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>/src/style/reset.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>/src/style/base.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>/src/style/font.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>/src/shared/header/header.style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>/src/shared/footer/footer.style.css">
     <?php
     if (isset($pageName)) {
         $path = "src/pages/$pageName/$pageName.style.css";
         if (file_exists($path)) {
     ?>
-            <link rel="stylesheet" href="<?= $path ?>">
+            <link rel="stylesheet" href="<?= BASE_URL.'/'.$path ?>">
     <?php }
     } ?>
 </head>
 
-<nav class="header-nav">
-    <input class="header-nav__checkbox" type="checkbox" id="nav-toggle">
-    <label class="header-nav__button" for="nav-toggle">
-        <img class="header-nav__burger" src="assets/img/icons/menu.png" alt="Menu burger">
-    </label>
-    <ul class="header-nav__list">
-        <li class="header-nav__item <?php if ($pageName == 'home') echo 'header-nav__item--selected' ?>">
-            <a href="http://localhost/mr_l">Accueil</a>
-        </li>
-        <li class="header-nav__item <?php if ($pageName == 'event') echo 'header-nav__item--selected' ?>">
-            <a href="http://localhost/mr_l/event">Evènement</a>
-        </li>
-        <li class="header-nav__item <?php if ($pageName == 'contact') echo 'header-nav__item--selected' ?>">
-            <a href="http://localhost/mr_l/contact">Contact</a>
-        </li>
-    </ul>
-</nav>
-
 <body>
-
+    <nav class="header-nav">
+        <input class="header-nav__checkbox" type="checkbox" id="nav-toggle">
+        <label class="header-nav__button" for="nav-toggle">
+            <img class="header-nav__burger" src="<?= getImagePath() ?>/icons/menu.png" alt="Menu burger">
+        </label>
+        <ul class="header-nav__list">
+            <li class="header-nav__item <?php if ($pageName == 'home') echo 'header-nav__item--selected' ?>">
+                <a href="http://localhost/mr_l" title="Bouton de navigation vers la page d'acceuil">Accueil</a>
+            </li>
+            <li class="header-nav__item <?php if ($pageName == 'event') echo 'header-nav__item--selected' ?>">
+                <a href="http://localhost/mr_l/event" title="Bouton de navigation vers la page d'évènement">Evenement</a>
+            </li>
+            <li class="header-nav__item <?php if ($pageName == 'contact') echo 'header-nav__item--selected' ?>">
+                <a href="http://localhost/mr_l/contact" title="Bouton de navigation vers la page de contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
     <?php if (!isset($_SESSION['loading'])) {
         $_SESSION['loading'] = true;
     ?>

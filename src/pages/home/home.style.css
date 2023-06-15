@@ -94,7 +94,6 @@ h3 {
 
 .home-supplier-item__figcaption {
     font-size: 12px;
-    font-family: Lemon;
     font-weight: 300;
     margin-top: 8px;
     line-height: 1.2;
@@ -148,28 +147,45 @@ h3 {
         background-size: contain;
         background-repeat: no-repeat;
         width: 118px;
-        height: 100%;
+        height: 118px;
         top: 36%;
+        transition: transform 0.3s ease-in-out;
     }
 
     .home-supplier-item:nth-child(1):after {
         background-image: url('../../../assets/img/icons/bottom_right_arrow.png');
         left: calc(-50% - 62px);
     }
+    
+    .home-supplier-item:nth-child(1):hover:after {
+        transform: rotate(-6deg) translateX(46px);
+    }
 
     .home-supplier-item:nth-child(2):after {
         background-image: url('../../../assets/img/icons/top_left_arrow.png');
         right: calc(-50% - 52px);
+    }
+    
+    .home-supplier-item:nth-child(2):hover:after {
+        transform: rotate(-10deg) translateX(-26px);
     }
 
     .home-supplier-item:nth-child(3):after {
         background-image: url('../../../assets/img/icons/top_right_arrow.png');
         left: calc(-50% - 58px);
     }
+    
+    .home-supplier-item:nth-child(3):hover:after {
+        transform: rotate(10deg) translateX(26px);
+    }
 
     .home-supplier-item:nth-child(4):after {
         background-image: url('../../../assets/img/icons/bottom_left_arrow.png');
         right: calc(-50% - 62px);
+    }
+    
+    .home-supplier-item:nth-child(4):hover:after {
+        transform: rotate(10deg) translateX(-26px);
     }
 
     .home-supplier-item__title {
@@ -194,7 +210,6 @@ h3 {
     display: flex;
     justify-content: space-between;
     column-gap: 12px;
-    font-family: Lemon;
     font-weight: 400;
     font-size: 24px;
     flex-wrap: wrap;
@@ -225,7 +240,6 @@ h3 {
 }
 
 .home-restaurant-menu__note {
-    font-family: Lemon;
     font-weight: 300;
     font-size: 12px;
     margin-top: 4vh;
@@ -383,6 +397,11 @@ h3 {
     line-height: 1.5;
 }
 
+
+.home-lifestyle__explain a{
+    color: var(--accent-color);
+}
+
 /*Tee shirt and Plate*/
 .home-tee-shirt,
 .home-plate {
@@ -412,6 +431,13 @@ h3 {
     width: 100%;
     border-radius: 2px;
     object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.home-tee-shirt__img:hover,
+.home-plate__img:hover {
+    transform: scale(1.06);
 }
 
 .home-tee-shirt__caption {
