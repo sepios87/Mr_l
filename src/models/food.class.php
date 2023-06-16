@@ -15,6 +15,10 @@ class Food {
         $this->price = $price;
     }
 
+    public function getId() {
+        return $this->id;
+    }
+
     public function getName() {
         return $this->name;
     }
@@ -29,6 +33,10 @@ class Food {
     
     public function setIsVegetarian($isVegetarian) {
         $this->isVegetarian = $isVegetarian;
+    }
+
+    public function getStringIngredients() {
+        return $this->ingredients;
     }
 
     public function getIngredients() {
