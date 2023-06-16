@@ -59,6 +59,7 @@ switch ($action) {
             $values = [
                 'name' => $_POST['name'],
                 'ingredients' => $_POST['ingredients'],
+                'price' => $_POST['price'],
                 'isVegetarian' => $vegetarian,
             ]; 
 
@@ -70,7 +71,7 @@ switch ($action) {
 
         break;
         
-    case FoodAction::Get->delete:
+    case FoodAction::Get->Delete:
         if (isset($_GET['id'])) {
             $foods = $_SESSION['foods'];
             $id = $_GET['id'];
