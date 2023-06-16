@@ -71,12 +71,6 @@
     min-height: 24px;
 }
 
-@media screen and (min-width: 768px) {
-    .manage-food-list__item {
-        width: 240px;
-    }
-}
-
 .manage-food-delete-button img {
     width: 20px;
     height: 20px;
@@ -88,7 +82,7 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 12px;
-    width: 200px;
+    width: 100%;
 }
 
 .manage-food-list__checkbox {
@@ -117,4 +111,10 @@
 .manage-food__add-button {
     display: block;
     margin: 4vh auto;
+}
+
+@media screen and (min-width: 768px) {
+    .manage-food-list__item {
+        width: 240px;
+    }
 }
