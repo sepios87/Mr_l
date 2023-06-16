@@ -11,7 +11,7 @@ switch ($origin) {
         break;
     case '/contact':
         if (!isset($_SESSION['schedules'])) {
-            header('Location: '. BASE_URL .'/src/controllers/schedule_controller.php?action=get');
+            header('Location: '. BASE_URL .'/src/controllers/schedule_controller.php?action=get&redirect=contact');
         }
         displayPage(
             'contact',
@@ -45,6 +45,10 @@ switch ($origin) {
         );
         break;
     case '/manage-schedule': 
+        if (!isset($_SESSION['schedules'])) {
+            header('Location: '. BASE_URL .'/src/controllers/schedule_controller.php?action=get&redirect=manage-schedule');
+        }
+
         displayPage(
             'manage-schedule',
             'Gestion des horaires - Monsieur L',

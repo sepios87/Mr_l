@@ -13,6 +13,11 @@ class Schedule
         $this->hourly = $hourly;
     }
 
+    public function getId()
+    {
+        return $this->id;
+    }
+
     public function getDay()
     {
         return $this->day;
@@ -22,9 +27,23 @@ class Schedule
     {
         return $this->hourly;
     }
+    
+    public function setHourly($hourly)
+    {
+        return $this->hourly = $hourly;
+    }
 
     public function __toString()
     {
         return $this->id . ' ' . $this->day . ' ' . $this->hourly;
+    }
+    
+    public function toArray()
+    {
+        return [
+            'id' => $this->id,
+            'day' => $this->day,
+            'hourly' => $this->hourly
+        ];
     }
 }

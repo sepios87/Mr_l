@@ -1,0 +1,75 @@
+
+/*Header*/
+.manage-schedule-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 38px;
+    width: 70vw;
+}
+
+.manage-schedule-header__logo {
+    width: 50px;
+    margin: 5vh 0;
+    object-fit: contain;
+}
+
+.manage-schedule-header__title{
+    width: 80%;
+    font-size: 28px; 
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .manage-schedule-header__logo {
+        width: 100px;
+    }
+}
+
+
+/* FORMIULAIRE  */
+
+.manage-schedule{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 45vh;
+    max-width: 567px;
+}
+
+.manage-schedule__title{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5vh 0;
+}
+
+.manage-schedule__item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    column-gap: 100px;
+    padding: 10px 0;
+}
+
+.manage-schedule__input{
+    width: 250px;
+    height: 30px;
+    border-radius: 2px;
+    border: transparent;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0 10px;
+}
+
+.manage-schedule__btn{
+    align-self: end;
+}
+
+
+@media screen and (min-width: 768px) {
+    .manage-schedule {
+        padding: 10px 200px;
+    }
+}

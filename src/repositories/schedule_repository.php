@@ -18,11 +18,15 @@ class ScheduleRepository
       return new Schedule($shedule['id'], $shedule['day'], $shedule['hourly']);
     }, $shedules);
     $_SESSION['schedules'] = $shedules;
-    var_dump($_SESSION['schedule']);
   }
 
   public function updateDay($id, $data)
   {
     return $this->pdoRepository->update('schedule', $id, $data);
+  }
+
+  public function UpadateSchedule($shedule)
+  {
+    return $this->pdoRepository->UpdateMultiple('schedule', $shedule);
   }
 }
