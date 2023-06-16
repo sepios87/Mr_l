@@ -26,12 +26,13 @@
 /* Dashboard tiles */
 .dashboard-tiles {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
     margin: 6vh auto;
     width: 80%;
+    min-height: 50vh;
 }
 
 .dashboard-card {
@@ -76,6 +77,7 @@
         max-width: 1024px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 80px);
     }
 
     .dashboard-card  {

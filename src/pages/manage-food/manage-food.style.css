@@ -1,0 +1,64 @@
+/*Header*/
+.manage-food-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    column-gap: 32px;
+    margin: 4vh 38px;
+}
+
+.manage-food-header__logo {
+    width: 50px;
+}
+
+.manage-food-header__title{
+    font-size: 28px; 
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .manage-food-header__logo {
+        width: 100px;
+    }
+}
+
+/*List*/
+.manage-food__title {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5vh 0;
+}
+
+.manager-food-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 38px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 70vw;
+}
+
+.manager-food-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 2px;
+    background-color: white;
+    row-gap: 18px;
+}
+
+.manager-food-list__edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 12px;
+}
+
+.manage-food__add-button {
+    display: block;
+    margin: 4vh auto;
+}
