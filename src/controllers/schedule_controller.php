@@ -52,9 +52,9 @@ switch ($action) {
             foreach ($schedule as $onSchedule) {
                 array_push($values, $onSchedule->toArray());
             }
-            $retour = $schedule_repository->UpadateSchedule($values);
+            $schedule_repository->upadateSchedule($values);
 
-            var_dump($retour);
+            header('Location: ' . BASE_URL . '/dashboard');
             
         }
 

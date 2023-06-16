@@ -52,7 +52,7 @@ class PdoRepository
   public function update($table, $id, $data)
   {
     $set = [];
-    foreach ($data as $key) {
+    foreach ($data as $key => $value) {
       $set[] = "$key = ?";
     }
     $values = array_values($data);
@@ -71,27 +71,12 @@ class PdoRepository
   }
 
   
-  public function UpdateMultiple($table, $data)
+  public function updateMultiple($table, $data)
   {
-    $set = [];
-    foreach ($data[0] as $key) {
-      $set[] = "$key = ?";
+
+    foreach($data as  $object){
+      $this->update($table, $object['id'], $object);
     }
 
-    $keys = array_keys($data[0]);
-
-    $SQL = "INSERT INTO $table (" . implode(',', $keys) . ") VALUES ";
-
-    foreach($data as $object){
-      $values = array_values($object);
-      $placeholders = implode(',', array_fill(0, count($keys), '?'));
-      $SQL .= "($placeholders),";
-    }
-    $SQL .=  "ON DUPLICATE KEY UPDATE " . implode(',', $set);
-
-    $stmt = $this->pdo->prepare($SQL);
-    $result = $stmt->execute($values);
-    // return $this->pdo->lastInsertId();
-    return $result;
   }
 }
