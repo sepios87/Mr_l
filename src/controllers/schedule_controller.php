@@ -48,11 +48,13 @@ switch ($action) {
             $schedule[5]->setHourly($_POST['day6']);
             $schedule[6]->setHourly($_POST['day7']);
 
+            $_SESSION['schedules'] = $schedule ;
+
             $values = array();
             foreach ($schedule as $onSchedule) {
                 array_push($values, $onSchedule->toArray());
             }
-            $schedule_repository->upadateSchedule($values);
+            $schedule_repository->updateSchedule($values);
 
             header('Location: ' . BASE_URL . '/dashboard');
             
