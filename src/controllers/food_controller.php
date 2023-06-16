@@ -10,6 +10,7 @@ enum FoodAction: string
 {
     case Get = 'get';
     case Update = 'update';
+    case Delete = 'delete';
 }
 
 if (isset($_GET['action'])) {
@@ -26,8 +27,7 @@ switch ($action) {
         header('Location: ' . BASE_URL . '/' . $redirect );
         break;
     case FoodAction::Update->value:
-        var_dump($_POST);
-        if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price']) && isset($_POST['vegetarian']) ) {
+        if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price']) ) {
             $foods = $_SESSION['foods'];
             
             foreach ($foods as $food) {
@@ -35,30 +35,54 @@ switch ($action) {
                     $food->setName($_POST['name']);
                     $food->setIngredients($_POST['ingredients']);
                     $food->setPrice($_POST['price']);
-                    $food->setVegetarian($_POST['vegetarian']);
-
+                    if(isset($_POST['vegetarian'])){
+                        $food->setIsVegetarian(1);
+                    }else{
+                        $food->setIsVegetarian(0);
+                    }
                     $values = $food->toArray();
                 }
             }
-            $food_repository->updateFood($values, isset($_POST['id']));
+
+            $food_repository->updateFood($_POST['id'], $values);
 
             header('Location: ' . BASE_URL . '/manage-food');
             
-        }else if (isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price']) && isset($_POST['vegetarian']) ) {
+        }else if (isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price'])) {
             $foods = $_SESSION['foods'];
+
+            $vegetarian = 0;
+            if(isset($_POST['vegetarian'])){
+                $vegetarian = 1;
+            }
 
             $values = [
                 'name' => $_POST['name'],
                 'ingredients' => $_POST['ingredients'],
-                'isVegetarian' => $_POST['vegetarian'],
+                'isVegetarian' => $vegetarian,
             ]; 
 
             $id = $food_repository->createFood($values);
-            var_dump($id);
-            // array_push($foods, new Food(0, $_POST['name'], $_POST['ingredients'], $_POST['price'], $_POST['vegetarian']));
-
+            array_push($foods, new Food($id, $_POST['name'], $_POST['ingredients'], $_POST['price'], $vegetarian));
+            $_SESSION['foods'] = $foods ; 
+            header('Location: ' . BASE_URL . '/manage-food');
         }
 
+        break;
+        
+    case FoodAction::Get->delete:
+        if (isset($_GET['id'])) {
+            $foods = $_SESSION['foods'];
+            $id = $_GET['id'];
+            $food_repository->deleteFood($id);
+            foreach ($foods as $key => $food) {
+                if($food->getId() == $id){
+                    unset($foods[$key]);
+                }
+            }
+            $_SESSION['foods'] = $foods;
+            header('Location: ' . BASE_URL . '/manage-food');
+        }
         break;
     default:
         break;
