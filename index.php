@@ -3,6 +3,9 @@
 // Importer les classes avant de démarrer la session pour la deserialisation
 require_once 'src/models/schedule.class.php';
 require_once 'src/models/food.class.php';
+
+// Define the session lifetime
+ini_set('session.gc_maxlifetime', 3600);
 session_start();
 
 require_once 'src/core/config.php';

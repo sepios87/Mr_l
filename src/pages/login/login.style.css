@@ -54,6 +54,7 @@
     font-size: 12px;
 }
 
+/* TODO afficher message d'erreur si le champ est incorrect en css */
 /* input:not(:focus):not(:placeholder-shown):invalid {
     border-color: var(--color-invalid);
 }

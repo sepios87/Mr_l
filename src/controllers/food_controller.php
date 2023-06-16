@@ -28,13 +28,14 @@ switch ($action) {
         break;
     case FoodAction::Update->value:
         if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price']) ) {
+            // Mise à jour d'un plat
             $foods = $_SESSION['foods'];
             
             foreach ($foods as $food) {
                 if($food->getId() == $_POST['id']){
                     $food->setName($_POST['name']);
                     $food->setIngredients($_POST['ingredients']);
-                    $food->setPrice($_POST['price']);
+                    $food->setPrice(floatval($_POST['price']));
                     if(isset($_POST['vegetarian'])){
                         $food->setIsVegetarian(1);
                     }else{
@@ -48,7 +49,8 @@ switch ($action) {
 
             header('Location: ' . BASE_URL . '/manage-food');
             
-        }else if (isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price'])) {
+        } else if (isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price'])) {
+            // Création d'un nouveau plat
             $foods = $_SESSION['foods'];
 
             $vegetarian = 0;
@@ -56,22 +58,24 @@ switch ($action) {
                 $vegetarian = 1;
             }
 
+            $price = floatval($_POST['price']);
+
             $values = [
                 'name' => $_POST['name'],
                 'ingredients' => $_POST['ingredients'],
-                'price' => $_POST['price'],
+                'price' => $price,
                 'isVegetarian' => $vegetarian,
             ]; 
 
             $id = $food_repository->createFood($values);
-            array_push($foods, new Food($id, $_POST['name'], $_POST['ingredients'], $_POST['price'], $vegetarian));
-            $_SESSION['foods'] = $foods ; 
+            array_push($foods, new Food($id, $_POST['name'], $_POST['ingredients'], $price, $vegetarian));
+            $_SESSION['foods'] = $foods;
             header('Location: ' . BASE_URL . '/manage-food');
         }
 
         break;
         
-    case FoodAction::Get->Delete:
+    case FoodAction::Delete->value:
         if (isset($_GET['id'])) {
             $foods = $_SESSION['foods'];
             $id = $_GET['id'];

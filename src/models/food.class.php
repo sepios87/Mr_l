@@ -1,13 +1,15 @@
-<?php 
+<?php
 
-class Food {
+class Food
+{
     private $id;
     private $name;
     private $ingredients;
     private $isVegetarian;
-    private $price; 
+    private $price;
 
-    public function __construct($id, $name, $ingredients, $isVegetarian, $price) {
+    public function __construct($id, $name, $ingredients, $price, $isVegetarian)
+    {
         $this->id = $id;
         $this->name = $name;
         $this->ingredients = $ingredients;
@@ -15,50 +17,61 @@ class Food {
         $this->price = $price;
     }
 
-    public function getId() {
+    public function getId()
+    {
         return $this->id;
     }
 
-    public function getName() {
+    public function getName()
+    {
         return $this->name;
     }
 
-    public function setName($name) {
+    public function setName($name)
+    {
         $this->name = $name;
     }
 
-    public function getIsVegetarian() {
+    public function getIsVegetarian()
+    {
         return $this->isVegetarian;
     }
-    
-    public function setIsVegetarian($isVegetarian) {
+
+    public function setIsVegetarian($isVegetarian)
+    {
         $this->isVegetarian = $isVegetarian;
     }
 
-    public function getStringIngredients() {
+    public function getStringIngredients()
+    {
         return $this->ingredients;
     }
 
-    public function getIngredients() {
+    public function getIngredients()
+    {
         return explode(',', $this->ingredients);
     }
 
-    public function setIngredients($ingredients) {
+    public function setIngredients($ingredients)
+    {
         $this->ingredients = $ingredients;
     }
 
-    public function getPrice() {
+    public function getPrice()
+    {
         return $this->price;
     }
 
-    public function setPrice($price) {
+    public function setPrice($price)
+    {
         $this->price = (float) $price;
     }
 
-    public function __toString() {
+    public function __toString()
+    {
         return $this->id . ' ' . $this->name . ' ' . $this->isVegetarian . ' ' . $this->ingredients;
     }
-    
+
     public function toArray()
     {
         return [

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const foodTemplate = document.getElementById('manage-food-template');
     const addBtn = document.getElementById('manage-food-btn-add');
 
+    // Add food action
     addBtn.addEventListener('click', function () {
         const li = document.createElement('li');
         li.classList.add('manage-food-list__item');
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Edit food action
 function editFood(elem) {
     const slip = elem.id.split('-');
     const id = slip[slip.length - 1];
@@ -19,13 +21,17 @@ function editFood(elem) {
     const nameInput = foodTemplate.content.querySelector('#name');
     const priceInput = foodTemplate.content.querySelector('#price');
     const ingredientsInput = foodTemplate.content.querySelector('#ingredients');
+    const checkboxVegetarian = foodTemplate.content.querySelector('#vegetarian');
 
     const item = document.getElementById(`manage-food-item-${id}`);
     nameInput.value = item.querySelector('#manage-food-item-name').innerHTML;
-    priceInput.value = item.querySelector('#manage-food-item-price').innerHTML;
+    const price = item.querySelector('#manage-food-item-price').innerHTML.replace('€', '');
+    priceInput.value = price;
     ingredientsInput.value = item.querySelector(
         '#manage-food-item-ingredients'
     ).innerHTML;
+    checkboxVegetarian.checked = item.classList.contains('manage-food-list__item--vegetarian');
+    item.classList.remove('manage-food-list__item--vegetarian');
 
     const inputId = document.createElement('input');
     inputId.id = 'id';

@@ -18,7 +18,7 @@ class FoodRepository
         var_dump($foods);
 
         $foods = array_map(function ($food) {
-            return new food($food['id'], $food['name'], $food['ingredients'], $food['isVegetarian'], $food['price']); 
+            return new food($food['id'], $food['name'], $food['ingredients'], $food['price'], $food['isVegetarian']); 
         }, $foods);
         $_SESSION['foods'] = $foods;
     }

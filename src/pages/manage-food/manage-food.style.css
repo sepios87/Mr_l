@@ -41,6 +41,7 @@
 }
 
 .manage-food-list__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +53,18 @@
     font-size: 14px;
     font-weight: 300;
     margin: 0 2px;
+}
+
+.manage-food-list__item--vegetarian::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--success-color);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
 }
 
 .manage-food-list__item div {
@@ -111,6 +124,10 @@
 .manage-food__add-button {
     display: block;
     margin: 4vh auto;
+}
+
+.button {
+    margin-top: 12px;
 }
 
 @media screen and (min-width: 768px) {
