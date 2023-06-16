@@ -93,3 +93,12 @@
             </svg>
         </div>
     <?php } ?>
+
+    <?php
+    if (isset($pageName)) {
+        $path = "src/pages/$pageName/$pageName.script.js";
+        if (file_exists($path)) {
+    ?>
+            <script src="<?= BASE_URL . '/' . $path ?>"></script>
+    <?php }
+    } ?>

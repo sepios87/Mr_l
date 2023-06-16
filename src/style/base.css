@@ -2,7 +2,9 @@
     --primary-color: black;
     --secondary-color: #f9f9f9;
     --accent-color: #c51b19;
+    --secondary-accent-color: #0084c1;
     --success-color: #42b74c;
+    --invalid-color: #f31a17;
 }
 
 html {

@@ -11,7 +11,7 @@ switch ($origin) {
         break;
     case '/contact':
         if (!isset($_SESSION['schedules'])) {
-            header('Location: '. BASE_URL .'/src/controllers/schedule_controller.php?action=get');
+            header('Location: ' . BASE_URL . '/src/controllers/schedule_controller.php?action=get');
         }
         displayPage(
             'contact',
@@ -44,11 +44,19 @@ switch ($origin) {
             true,
         );
         break;
-    case '/manage-schedule': 
+    case '/manage-schedule':
         displayPage(
             'manage-schedule',
             'Gestion des horaires - Monsieur L',
             "Gestion des horaires de Mr.L, le roi du hot-dog toulousain.",
+            true,
+        );
+        break;
+    case '/manage-food':
+        displayPage(
+            'manage-food',
+            'Gestion du menu - Monsieur L',
+            "Gestion du menu de Mr.L, le roi du hot-dog toulousain.",
             true,
         );
         break;
