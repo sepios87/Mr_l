@@ -3,6 +3,10 @@ $origin = str_replace(dirname($_SERVER['PHP_SELF']), '', $_SERVER['REQUEST_URI']
 
 switch ($origin) {
     case '/':
+        if (!isset($_SESSION['foods'])) {
+            header('Location: '. BASE_URL .'/src/controllers/food_controller.php?action=get');
+        }
+        
         displayPage(
             'home',
             'Hotdog toulouse  - Monsieur L',

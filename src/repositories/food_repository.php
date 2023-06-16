@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 class FoodRepository
 {
     private $pdoRepository;
@@ -11,7 +13,14 @@ class FoodRepository
 
     public function getAll()
     {
-        return $this->pdoRepository->getAll('food');
+        
+        $foods = $this->pdoRepository->getAll('food');
+        var_dump($foods);
+
+        $foods = array_map(function ($food) {
+            return new food($food['id'], $food['name'], $food['ingredients'], $food['isVegetarian'], $food['price']); 
+        }, $foods);
+        $_SESSION['foods'] = $foods;
     }
 
     public function updateFood($id, $data)

@@ -1,3 +1,7 @@
+<?php 
+// unset($_SESSION['foods']); 
+// var_dump($_SESSION['foods']);
+?>
 <header class="home-header">
     <img class="home-header__logo" src="<?= getImagePath() ?>/logo.png" alt="Logo du restaurant">
     <h1 class="home-header__title">Le hot dog à la saucisse de toulouse</h1>
@@ -58,73 +62,25 @@
     <div class="home-restaurant-menu__container">
         <div>
             <ul class="home-restaurant-menu__list">
-                <li class="home-menu-item">
-                    <div class="home-menu-item__recipe">
-                        <p>Tradichienel</p>
-                        <ul class="home-menu-item__ingredients">
-                            <li>Ketchup Artisanal</li>
-                            <li>Oignons frits</li>
-                        </ul>
-                    </div>
-                    <span>9.0</span>
-                </li>
-                <li class="home-menu-item">
-                    <div class="home-menu-item__recipe">
-                        <p>Toutouyoutou</p>
-                        <ul class="home-menu-item__ingredients">
-                            <li>Ketchup de carotte</li>
-                            <li>Oignons rouges</li>
-                            <li>Coriandre</li>
-                        </ul>
-                    </div>
-                    <span>9.0</span>
-                </li>
-                <li class="home-menu-item">
-                    <div class="home-menu-item__recipe">
-                        <p>Oh my dog</p>
-                        <ul class="home-menu-item__ingredients">
-                            <li>Crème de truffe</li>
-                            <li>Oignons rouges</li>
-                        </ul>
-                    </div>
-                    <span>9.5</span>
-                </li>
-                <li class="home-menu-item">
-                    <div class="home-menu-item__recipe">
-                        <p>Dog to be alive</p>
-                        <ul class="home-menu-item__ingredients">
-                            <li>Ketchup fumé</li>
-                            <li>Pickles</li>
-                            <li>Oignons rouges</li>
-                            <li>Bacon cripsy</li>
-                        </ul>
-                    </div>
-                    <span>9.5</span>
-                </li>
-                <li class="home-menu-item">
-                    <div class="home-menu-item__recipe">
-                        <p>Waf the fuck</p>
-                        <ul class="home-menu-item__ingredients">
-                            <li>Ketchup</li>
-                            <li>Piment d'espelette</li>
-                            <li>Chips de chorizo</li>
-                            <li>Pickles de courgette</li>
-                        </ul>
-                    </div>
-                    <span>9.5</span>
-                </li>
-                <li class="home-menu-item home-menu-item--vegetarian">
-                    <div class="home-menu-item__recipe">
-                        <p>Végétariench</p>
-                        <ul class="home-menu-item__ingredients">
-                            <li>Sexy carotte fondante</li>
-                            <li>Eclats d'oeufs</li>
-                            <li>Oignons rouge</li>
-                            <li>Sauce cool</li>
-                        </ul>
-                    </div>
-                    <span>8.0</span>
-                </li>
+                <?php
+                if (isset($_SESSION['foods'])) {
+                    foreach ($_SESSION['foods'] as $food) { ?>
+                        <li class="home-menu-item <?php if($food->getIsVegetarian()) echo 'home-menu-item--vegetarian';  ?>">
+                            <div class="home-menu-item__recipe">
+                                <p><?= $food->getName(); ?></p>
+                                <ul class="home-menu-item__ingredients">
+                                    <?php $ingredient = $food->getIngredients(); 
+                                    foreach ($ingredient as $value) { 
+                                    ?>
+                                       <li> <?= $value ?></li>
+                                     <?php  } ?>
+                                </ul>
+                            </div>
+                            <span><?= $food->getPrice(); ?></span>
+                        </li>
+                    <?php }
+                } ?>
+
             </ul>
             <p class="home-restaurant-menu__note">
                 <span>*Petites notes :</span><br>

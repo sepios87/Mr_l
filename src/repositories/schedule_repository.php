@@ -25,7 +25,7 @@ class ScheduleRepository
     return $this->pdoRepository->update('schedule', $id, $data);
   }
 
-  public function upadateSchedule($shedule)
+  public function updateSchedule($shedule)
   {
     return $this->pdoRepository->updateMultiple('schedule', $shedule);
   }
