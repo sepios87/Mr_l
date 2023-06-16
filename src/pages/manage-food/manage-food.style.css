@@ -121,7 +121,7 @@
     background-color: grey;
 }
 
-.manage-food__add-button {
+.button.manage-food__add-button  {
     display: block;
     margin: 4vh auto;
 }
