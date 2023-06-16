@@ -72,7 +72,7 @@
                                      <?php  } ?>
                                 </ul>
                             </div>
-                            <span><?= $food->getPrice(); ?></span>
+                            <span><?= number_format($food->getPrice(), 1, '.', ''); ?></span>
                         </li>
                     <?php }
                 } ?>

@@ -36,7 +36,7 @@
     <form class="manage-food-list__edit-form" action="<?= BASE_URL ?>/src/controllers/food_controller.php?action=update" method="POST">
         <input required type="text" placeholder="Nom du plat" id="name" class="manage-food-list__input" name="name">
         <input required type="text" placeholder="Ingrédients" id="ingredients" class="manage-food-list__input" name="ingredients">
-        <input required min="0" step=".01" type="number" placeholder="Prix" id="price" class="manage-food-list__input" name="price">
+        <input required min="0" step=".1" type="number" placeholder="Prix" id="price" class="manage-food-list__input" name="price">
         <div class="manage-food-list__checkbox">
             <label>Végétarien</label>
             <input type="checkbox" name="vegetarian" value="vegetarian" id="vegetarian">

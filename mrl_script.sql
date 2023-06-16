@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 15 juin 2023 à 13:03
+-- Généré le : ven. 16 juin 2023 à 12:06
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.1.13
 
@@ -31,11 +31,21 @@ DROP TABLE IF EXISTS `food`;
 CREATE TABLE IF NOT EXISTS `food` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
-  `price` decimal(10,2) NOT NULL,
+  `price` float(10,1) NOT NULL,
   `isVegetarian` tinyint(1) NOT NULL,
   `ingredients` varchar(555) COLLATE utf8mb4_general_ci NOT NULL,
   KEY `id` (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `food`
+--
+
+INSERT INTO `food` (`id`, `name`, `price`, `isVegetarian`, `ingredients`) VALUES
+(21, 'Toutouyoutou', 9.0, 0, 'Ketchup de carotte, Oignons rouges, Coriandre'),
+(20, 'Tradichienel', 9.0, 0, 'Ketchup Artisanal, Oignons frits'),
+(22, 'Oh my dog', 9.5, 0, 'Crème de truffe, Oignons rouges'),
+(23, 'Végétariench', 8.0, 1, 'Sexy carotte fondante, Eclats d\'oeufs, Oignons rouge, Sauce cool');
 
 -- --------------------------------------------------------
 
