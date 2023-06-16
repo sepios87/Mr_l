@@ -27,7 +27,7 @@
 .manage-food__title {
     font-size: 16px;
     font-weight: 300;
-    margin: 5vh 0;
+    margin: 5vh 36px;
 }
 
 .manage-food-list {
@@ -48,16 +48,39 @@
     border-radius: 2px;
     background-color: white;
     row-gap: 12px;
-    width: 200px;
+    width: 100%;
     font-size: 14px;
     font-weight: 300;
     margin: 0 2px;
+}
+
+.manage-food-list__item div {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.manage-food-list__item .button {
+    width: 100%;
 }
 
 .manage-food-list__item p {
     margin-left: 2px;
     margin-top: 6px;
     min-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .manage-food-list__item {
+        width: 240px;
+    }
+}
+
+.manage-food-delete-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
 }
 
 .manage-food-list__edit-form {
