@@ -1,7 +1,3 @@
-<?php 
-// unset($_SESSION['foods']); 
-// var_dump($_SESSION['foods']);
-?>
 <header class="home-header">
     <img class="home-header__logo" src="<?= getImagePath() ?>/logo.png" alt="Logo du restaurant">
     <h1 class="home-header__title">Le hot dog à la saucisse de toulouse</h1>

@@ -27,7 +27,7 @@ switch ($action) {
         break;
     case FoodAction::Update->value:
         var_dump($_POST);
-        if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price']) && isset($_POST['vegetarian']) ) {
+        if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price']) ) {
             $foods = $_SESSION['foods'];
             
             foreach ($foods as $food) {
@@ -35,7 +35,9 @@ switch ($action) {
                     $food->setName($_POST['name']);
                     $food->setIngredients($_POST['ingredients']);
                     $food->setPrice($_POST['price']);
-                    $food->setVegetarian($_POST['vegetarian']);
+                    if(isset($_POST['vegetarian'])){
+                        $food->setVegetarian(1);
+                    }
 
                     $values = $food->toArray();
                 }
@@ -44,7 +46,7 @@ switch ($action) {
 
             header('Location: ' . BASE_URL . '/manage-food');
             
-        }else if (isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price']) && isset($_POST['vegetarian']) ) {
+        }else if (isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price'])) {
             $foods = $_SESSION['foods'];
 
             $values = [
