@@ -7,14 +7,17 @@
     <p class="manage-food__title">Modifiez le menu : </p>
     <section class="manage-food__container">
         <ul class="manage-food-list" id="manage-food-list">
-            <!-- TODO set id -->
-            <li class="manage-food-list__item" id="manage-food-item-1">
-                <p id="manage-food-item-name">Hot dog</p>
-                <p id="manage-food-item-ingredients">Pain, saucisse, sauce</p>
-                <p id="manage-food-item-price">20€</p>
-                <!-- TODO set id -->
-                <button class="button button--small button--grey" id="manage-food-edit-1" onclick="editFood(this)">Modifier</button>
-            </li>
+            <?php
+            if (isset($_SESSION['foods'])) {
+                foreach ($_SESSION['foods'] as $food) {
+                    echo '<li class="manage-food-list__item" id="manage-food-item-' . $food->getId() . '">';
+                    echo '<p id="manage-food-item-name">' . $food->getName() . '</p>';
+                    echo '<p id="manage-food-item-ingredients">' . $food->getIngredients() . '</p>';
+                    echo '<p id="manage-food-item-price">' . $food->getPrice() . '</p>';
+                    echo '<button class="button button--small button--grey" id="manage-food-edit-' . $food->getId() . '" onclick="editFood(this)">Modifier</button>';
+                    echo '</li>';
+                }
+            } ?>
         </ul>
     </section>
     <button id="manage-food-btn-add" class="button manage-food__add-button">Ajouter un élément</button>
@@ -22,12 +25,12 @@
 
 <template id="manage-food-template">
     <form class="manage-food-list__edit-form" action="<?= BASE_URL ?>/src/controllers/food_controller.php?action=update" method="POST">
-        <input type="text" placeholder="Nom du plat" id="name" class="manage-food-list__input">
-        <input type="text" placeholder="Ingrédients" id="ingredients" class="manage-food-list__input">
-        <input type="text" placeholder="Prix" id="price" class="manage-food-list__input">
+        <input type="text" placeholder="Nom du plat" id="name" class="manage-food-list__input" name="name">
+        <input type="text" placeholder="Ingrédients" id="ingredients" class="manage-food-list__input" name="ingredients">
+        <input type="number" placeholder="Prix" id="price" class="manage-food-list__input" name="price">
         <div class="manage-food-list__checkbox">
             <label>Végétarien</label>
-            <input type="checkbox" name="vegetarian" value="vegetarien">
+            <input type="checkbox" name="vegetarian" value="vegetarian">
         </div>
         <input class="button button--small" type="submit" value="Valider">
     </form>

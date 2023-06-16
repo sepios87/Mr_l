@@ -23,9 +23,10 @@ if (isset($_GET['redirect'])) {
 switch ($action) {
     case FoodAction::Get->value:
         $food = $food_repository->getAll();
-        header('Location: ' . BASE_URL );
+        header('Location: ' . BASE_URL . '/' . $redirect );
         break;
     case FoodAction::Update->value:
+        var_dump($_POST);
         if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['ingredients']) && isset($_POST['price']) && isset($_POST['vegetarian']) ) {
             $foods = $_SESSION['foods'];
             

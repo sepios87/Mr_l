@@ -4,9 +4,8 @@ $origin = str_replace(dirname($_SERVER['PHP_SELF']), '', $_SERVER['REQUEST_URI']
 switch ($origin) {
     case '/':
         if (!isset($_SESSION['foods'])) {
-            header('Location: '. BASE_URL .'/src/controllers/food_controller.php?action=get');
+            header('Location: '. BASE_URL .'/src/controllers/food_controller.php?action=get&redirect=');
         }
-        
         displayPage(
             'home',
             'Hotdog toulouse  - Monsieur L',
@@ -60,6 +59,9 @@ switch ($origin) {
         );
         break;
     case '/manage-food':
+        if (!isset($_SESSION['foods'])) {
+            header('Location: '. BASE_URL .'/src/controllers/food_controller.php?action=get&redirect=manage-food');
+        }
         displayPage(
             'manage-food',
             'Gestion du menu - Monsieur L',
