@@ -73,6 +73,54 @@
     background-size: 100%;
 }
 
+/*Scroll-container*/
+body {
+    position: relative;
+}
+
+.header-scroll-container {
+    display: none;
+    position: absolute;
+    top: 26px;
+    right: 32px;
+    height: 100%;
+    z-index: 10;
+}
+
+.header-scroll-container:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.header-scroll-container__link {
+    position: sticky;
+    top: 90vh;
+    cursor: pointer;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(197, 28, 25, 0.9);
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.header-scroll-container__img {
+    width: 36px;
+    height: 36px;
+}
+
+@media (min-width: 768px) {
+    .header-scroll-container {
+        display: block;
+    }
+}
+
+/*Loading*/
 .header-loading {
     position: fixed;
     top: 0;
@@ -113,7 +161,7 @@
 .header-loading__sauce {
     fill: none;
     stroke: var(--accent-color);
-    stroke-width: 20.0;
+    stroke-width: 20;
     stroke-linecap: round;
     stroke-dasharray: 770;
     animation: dash 2.3s ease-in-out alternate;

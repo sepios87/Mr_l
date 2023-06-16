@@ -5,7 +5,7 @@
 <form action="<?= BASE_URL ?>/src/controllers/auth_controller.php?action=login" method="post" class="login-form">
 
     <label for="email" class="login-form__label">Email
-        <input class="login-form__input" type="email" name="email" id="email" placeholder="Email" required>
+        <input class="login-form__input" type="email" name="email" id="email" placeholder="Email" required autofocus>
     </label>
 
     <label for="password" class="login-form__label">Mot de passe
