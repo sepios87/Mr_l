@@ -7,6 +7,12 @@ Reprise du site vitrine du restaurant Mr.L Hot Dog à Toulouse :
 - Ajustements graphiques
 - Améliorations responsives
 
+## Technologie
+
+- PHP 8.1
+- HTML / CSS
+- JS
+
 ## Déploiement
 
  1. Créer une base de données
