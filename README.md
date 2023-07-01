@@ -29,5 +29,6 @@ Reprise du site vitrine du restaurant Mr.L Hot Dog à Toulouse :
 >     define('DB_PORT', '3306'); // Port de la base de données
 >     define('ENV', 'dev'); // dev ou prod
  
- 5. Déposer ensuite le site sur la racine du serveur
- 6. Penser à générer un sitemap.xml après le déploiement du site 
+ 5. Vérifier la version actuelle de PHP et selectionner PHP 8 ou plus
+ 6. Déposer ensuite le site sur la racine du serveur 
+ 7. Penser à générer un sitemap.xml après le déploiement du site 
