@@ -1,6 +1,8 @@
 # Mr.L Hot Dog
 
-<video src='video_presentation.mp4' width=180/>
+
+https://github.com/sepios87/Mr_l/assets/58748740/189ef700-2443-4c26-9c68-29d8097a82a3
+
 
 ## Contexte
 
