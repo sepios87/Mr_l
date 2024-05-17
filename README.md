@@ -1,5 +1,7 @@
 # Mr.L Hot Dog
 
+<video src='video_presentation.mp4' width=180/>
+
 ## Contexte
 
 Reprise du site vitrine du restaurant Mr.L Hot Dog à Toulouse : 
